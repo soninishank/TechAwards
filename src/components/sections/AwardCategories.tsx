@@ -13,51 +13,20 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { awardCategoryDetails } from '@/data/awardCategories';
 
 type Category = {
-  title: string;
-  description: string;
-  icon: LucideIcon;
   slug: string;
+  icon: LucideIcon;
 };
 
 const categories: Category[] = [
-  {
-    title: 'Best Tech Startup',
-    description: 'For startups showing exceptional momentum, product quality, and customer love in the last 12 months.',
-    icon: Rocket,
-    slug: 'best-tech-startup',
-  },
-  {
-    title: 'Best Tech Work Culture',
-    description: 'Recognizing teams creating high-trust, inclusive, and growth-oriented engineering cultures.',
-    icon: Users,
-    slug: 'best-tech-work-culture',
-  },
-  {
-    title: 'Best Tech Manager',
-    description: 'For leaders who consistently ship outcomes while mentoring and scaling healthy technical teams.',
-    icon: Target,
-    slug: 'best-tech-manager',
-  },
-  {
-    title: 'Best Enterprise Tech',
-    description: 'Awarding established organizations that modernize systems and deliver measurable business impact.',
-    icon: Trophy,
-    slug: 'best-enterprise-tech',
-  },
-  {
-    title: 'Tech for Good',
-    description: 'Celebrating products using technology to improve access, sustainability, or social outcomes.',
-    icon: Lightbulb,
-    slug: 'tech-for-good',
-  },
-  {
-    title: 'Top Gentle Giant',
-    description: 'Honoring larger companies that stay agile, curious, and builder-focused as they scale.',
-    icon: Star,
-    slug: 'top-gentle-giant',
-  },
+  { slug: 'best-tech-startup', icon: Rocket },
+  { slug: 'best-tech-work-culture', icon: Users },
+  { slug: 'best-tech-manager', icon: Target },
+  { slug: 'best-enterprise-tech', icon: Trophy },
+  { slug: 'tech-for-good', icon: Lightbulb },
+  { slug: 'top-gentle-giant', icon: Star },
 ];
 
 export function AwardCategories() {
@@ -81,24 +50,28 @@ export function AwardCategories() {
         </div>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {categories.map((category, index) => (
-            <motion.div
-              key={category.slug}
+          {categories.map((category, index) => {
+            const details = awardCategoryDetails.find((item) => item.slug === category.slug);
+            if (!details) return null;
+
+            return (
+              <motion.div
+              key={details.slug}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: index * 0.05 }}
               viewport={{ once: true }}
             >
-              <Link href={`/awards/${category.slug}`} className="group block h-full">
+              <Link href={`/awards/${details.slug}`} className="group block h-full">
                 <Card className="h-full border-white/10 bg-slate-950/70 text-slate-100 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-amber-300/50 group-hover:shadow-[0_20px_50px_rgba(251,191,36,0.1)]">
                   <CardHeader>
                     <div className="mb-3 inline-flex w-fit rounded-xl border border-cyan-300/40 bg-cyan-400/10 p-2 text-cyan-200">
                       <category.icon className="h-5 w-5" />
                     </div>
-                    <CardTitle className="text-xl text-white">{category.title}</CardTitle>
+                    <CardTitle className="text-xl text-white">{details.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm leading-relaxed text-slate-400">{category.description}</p>
+                    <p className="text-sm leading-relaxed text-slate-400">{details.shortDescription}</p>
                     <span className="mt-4 inline-flex items-center text-sm font-medium text-amber-200">
                       View details <ChevronRight className="ml-1 h-4 w-4" />
                     </span>
@@ -106,7 +79,7 @@ export function AwardCategories() {
                 </Card>
               </Link>
             </motion.div>
-          ))}
+          )})}
         </div>
       </div>
     </section>

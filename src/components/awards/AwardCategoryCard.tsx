@@ -42,7 +42,7 @@ export function AwardCategoryCard({ category }: AwardCategoryCardProps) {
                     </div>
                 </div>
                 <Button variant="outline" className="w-full" asChild>
-                    <Link href={`/awards/nominate/${category.id}`}>
+                    <Link href={`/awards/contact?category=${category.id}`}>
                         Nominate Now
                     </Link>
                 </Button>
