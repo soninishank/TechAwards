@@ -7,14 +7,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
-import { useSearchParams } from 'next/navigation';
 
-const locations = ['Austin', 'Dallas', 'Houston', 'Denver', 'Chicago', 'Seattle', 'Remote', 'Other'];
+const locations = ['Bengaluru', 'Mumbai', 'Delhi NCR', 'Hyderabad', 'Chennai', 'Pune', 'Remote', 'Other'];
 
 export default function ContactPage() {
-  const searchParams = useSearchParams();
-  const selectedCategory = searchParams.get('category');
-
   return (
     <div className="min-h-screen w-full bg-slate-50 dark:bg-slate-950">
       <section className="border-b border-slate-100 bg-white px-6 py-20 text-center dark:border-slate-800 dark:bg-slate-900 md:px-12">
@@ -45,11 +41,6 @@ export default function ContactPage() {
               <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-400">
                 For general inquiries or questions about nominations, finalists, voting, or judging, fill the form below.
               </p>
-              {selectedCategory && (
-                <p className="mt-4 inline-flex rounded-full border border-cyan-300/60 bg-cyan-50 px-3 py-1 text-sm font-medium text-cyan-700 dark:border-cyan-700 dark:bg-cyan-900/20 dark:text-cyan-300">
-                  Selected category: {selectedCategory}
-                </p>
-              )}
             </div>
 
             <form className="space-y-6 rounded-xl border border-slate-200 bg-white p-8 text-slate-900 shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:text-slate-100">

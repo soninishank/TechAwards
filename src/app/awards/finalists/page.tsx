@@ -16,30 +16,30 @@ const categories = [
     title: 'Best Tech Startup',
     description: 'Early-stage teams shipping clear customer value and strong execution velocity.',
     finalists: [
-      { name: 'SignalFoundry', city: 'Austin', image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=400&h=300' },
-      { name: 'Northline AI', city: 'Dallas', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=400&h=300' },
-      { name: 'Patchgrid Labs', city: 'Houston', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400&h=300' },
-      { name: 'OrbitLedger', city: 'Denver', image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=400&h=300' },
+      { name: 'SignalFoundry', city: 'Bengaluru', image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=400&h=300' },
+      { name: 'Northline AI', city: 'Mumbai', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=400&h=300' },
+      { name: 'Patchgrid Labs', city: 'Hyderabad', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400&h=300' },
+      { name: 'OrbitLedger', city: 'Pune', image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=400&h=300' },
     ],
   },
   {
     title: 'Best Tech Manager',
     description: 'Leaders who scale teams, deliver outcomes, and invest deeply in mentorship.',
     finalists: [
-      { name: 'Jordan Lee', company: 'Stack Harbor', city: 'Austin', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400' },
-      { name: 'Maya Patel', company: 'Railcore', city: 'Chicago', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400' },
-      { name: 'Carlos Bennett', company: 'Verity Cloud', city: 'Seattle', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400' },
-      { name: 'Nina Ross', company: 'Kiteframe', city: 'Boston', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400' },
+      { name: 'Jordan Lee', company: 'Stack Harbor', city: 'Bengaluru', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400' },
+      { name: 'Maya Patel', company: 'Railcore', city: 'Delhi NCR', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400' },
+      { name: 'Carlos Bennett', company: 'Verity Cloud', city: 'Chennai', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400' },
+      { name: 'Nina Ross', company: 'Kiteframe', city: 'Pune', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400' },
     ],
   },
   {
     title: 'Best Tech Work Culture',
     description: 'Organizations proving that great culture and strong product execution can co-exist.',
     finalists: [
-      { name: 'HarborStack', city: 'Austin', image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400&h=300' },
-      { name: 'Lumenloop', city: 'Denver', image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=400&h=300' },
-      { name: 'Pinebyte', city: 'San Diego', image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=400&h=300' },
-      { name: 'MetricForge', city: 'Houston', image: 'https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&q=80&w=400&h=300' },
+      { name: 'HarborStack', city: 'Bengaluru', image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400&h=300' },
+      { name: 'Lumenloop', city: 'Hyderabad', image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=400&h=300' },
+      { name: 'Pinebyte', city: 'Mumbai', image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=400&h=300' },
+      { name: 'MetricForge', city: 'Chennai', image: 'https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&q=80&w=400&h=300' },
     ],
   },
 ];
@@ -54,7 +54,7 @@ export default function FinalistsPage() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-6 font-display text-4xl font-medium tracking-tight text-slate-900 dark:text-white md:text-6xl"
           >
-            2026 Tech Award Summit Finalists
+            2019 Tech Award Summit Finalists
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,7 @@ export default function FinalistsPage() {
             transition={{ delay: 0.1 }}
             className="mx-auto max-w-3xl text-xl text-slate-600 dark:text-slate-400"
           >
-            Meet the builders and teams selected by our judging panel for the 2026 season.
+            Meet the builders and teams selected by our judging panel for the 2019 season.
           </motion.p>
           <p className="mx-auto mt-4 max-w-3xl text-sm text-slate-500 dark:text-slate-400">
             Demo data: finalist names and companies below are representative sample profiles.

@@ -42,7 +42,7 @@ export function AwardCategories() {
             </p>
           </div>
           <Link
-            href="/awards/how-it-works"
+            href="/awards/selection-criteria"
             className="inline-flex items-center justify-center rounded-full border border-amber-300/50 px-5 py-2 text-sm font-medium text-amber-100 hover:bg-amber-200/10"
           >
             Review Criteria

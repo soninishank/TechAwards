@@ -10,9 +10,9 @@ export default function EventsPage() {
       <div className="mx-auto w-full max-w-[1240px]">
         <div className="mb-12 rounded-3xl border border-white/10 bg-slate-900/70 p-6 md:p-9">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-amber-200">Community Calendar</p>
-          <h1 className="mt-2 font-display text-4xl text-white md:text-5xl">Events around the awards function</h1>
+          <h1 className="mt-2 font-display text-4xl text-white md:text-5xl">2019 Awards Event Timeline</h1>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-400 md:text-base">
-            From finalist showcases to community mixers, these events bring nominees, attendees, and judges together before and after awards night.
+            From finalist showcases to post-event discussions, this is the archived timeline around the September 15, 2019 awards function at Taj MG Road, Bengaluru.
           </p>
         </div>
 
@@ -23,6 +23,9 @@ export default function EventsPage() {
               <EventCard key={event.id} event={event} />
             ))}
           </div>
+          {upcomingEvents.length === 0 && (
+            <p className="text-sm text-slate-400">No upcoming events. This page is showing the archived 2019 season.</p>
+          )}
         </section>
 
         <section>

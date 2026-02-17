@@ -9,7 +9,7 @@ const steps = [
   {
     id: 1,
     title: 'Nominations Open',
-    date: 'May 1 - July 15, 2026',
+    date: 'May 1 - July 15, 2019',
     description: 'Community members, teams, and peers submit nominations across all categories with supporting evidence.',
     icon: Users,
     color: 'bg-blue-500',
@@ -17,7 +17,7 @@ const steps = [
   {
     id: 2,
     title: 'Finalist Selection',
-    date: 'July 16 - August 20, 2026',
+    date: 'July 16 - August 20, 2019',
     description: 'Independent judges score nominations using category criteria and publish the finalist slate.',
     icon: CheckCircle2,
     color: 'bg-purple-500',
@@ -25,7 +25,7 @@ const steps = [
   {
     id: 3,
     title: 'Community Voting',
-    date: 'August 21 - September 10, 2026',
+    date: 'August 21 - September 10, 2019',
     description: 'Public voting determines community-choice winners while judges complete final rankings.',
     icon: Vote,
     color: 'bg-pink-500',
@@ -33,8 +33,8 @@ const steps = [
   {
     id: 4,
     title: 'Awards Function',
-    date: 'September 18, 2026',
-    description: 'Winners are announced live at Tech Award Summit with finalist showcases and partner networking.',
+    date: 'September 15, 2019',
+    description: 'Winners were announced live at Tech Award Summit at Taj MG Road, Bengaluru.',
     icon: Trophy,
     color: 'bg-yellow-500',
   },
@@ -59,7 +59,7 @@ export default function HowItWorksPage() {
             transition={{ delay: 0.1 }}
             className="mx-auto max-w-2xl text-xl text-slate-200"
           >
-            Everything you need to know about the Tech Award Summit process, from nomination to awards night.
+            Archived process of Tech Award Summit 2019, from nomination to awards night.
           </motion.p>
         </div>
       </section>
@@ -98,13 +98,13 @@ export default function HowItWorksPage() {
 
       <section className="w-full bg-slate-100 py-20 dark:bg-slate-900">
         <div className="mx-auto w-full max-w-[1920px] px-6 text-center md:px-12">
-          <h2 className="mb-6 font-display text-3xl font-medium tracking-tight text-slate-900 dark:text-white md:text-4xl">Ready to nominate?</h2>
+          <h2 className="mb-6 font-display text-3xl font-medium tracking-tight text-slate-900 dark:text-white md:text-4xl">2019 Program Archive</h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
-            Submit your nomination with impact evidence and team context. It takes about 10 to 15 minutes.
+            Nominations for the 2019 season are closed. Explore the finalists, judging process, and winners.
           </p>
           <div className="flex justify-center gap-4">
             <Button size="lg" className="bg-cyan-600 text-white hover:bg-cyan-700" asChild>
-              <Link href="/awards/contact">Nominate Now</Link>
+              <Link href="/awards/selection-criteria">View Selection Criteria</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/awards/faq">Read FAQ</Link>

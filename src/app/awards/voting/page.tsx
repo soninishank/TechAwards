@@ -17,7 +17,7 @@ export default function VotingPage() {
             className="mb-6 inline-flex items-center gap-2 rounded-full bg-slate-100 px-4 py-2 text-slate-600 dark:bg-slate-800 dark:text-slate-300"
           >
             <Clock className="h-4 w-4" />
-            <span className="text-sm font-semibold uppercase tracking-wide">Status: Voting Opens August 21, 2026</span>
+            <span className="text-sm font-semibold uppercase tracking-wide">Status: Voting Closed (2019 Edition)</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export default function VotingPage() {
             transition={{ delay: 0.1 }}
             className="mx-auto max-w-3xl text-xl text-slate-600 dark:text-slate-400"
           >
-            Help decide who takes home Community Choice honors in the 2026 season.
+            Community voting for the 2019 season is now closed.
           </motion.p>
         </div>
       </section>
@@ -66,9 +66,9 @@ export default function VotingPage() {
           </div>
 
           <div className="relative z-10 mx-auto max-w-2xl">
-            <h2 className="mb-4 font-display text-3xl font-bold">Get notified when voting opens</h2>
+            <h2 className="mb-4 font-display text-3xl font-bold">Voting archive</h2>
             <p className="mb-8 text-lg text-slate-300">
-              Join the update list and we will notify you when voting opens and finalists are published.
+              Voting concluded on September 10, 2019. Browse finalist and winner pages for the complete results.
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <Button
@@ -76,7 +76,7 @@ export default function VotingPage() {
                 className="bg-cyan-500 font-semibold text-white shadow-lg shadow-cyan-500/25 hover:bg-cyan-600"
                 asChild
               >
-                <Link href="/awards/contact">Notify Me</Link>
+                <Link href="/awards/finalists">View Finalists</Link>
               </Button>
               <Button
                 size="lg"
@@ -84,7 +84,7 @@ export default function VotingPage() {
                 className="border-slate-600 text-slate-200 hover:bg-slate-800 hover:text-white"
                 asChild
               >
-                <Link href="/awards/winners">View 2025 Winners</Link>
+                <Link href="/awards/winners">View 2019 Winners</Link>
               </Button>
             </div>
           </div>

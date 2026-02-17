@@ -14,7 +14,7 @@ const faqData = [
       },
       {
         q: 'Can I update my nomination after submission?',
-        a: 'Yes. You can edit your submission until the nomination window closes on July 15, 2026.',
+        a: 'Yes. In the 2019 season, nominations could be edited until the deadline on July 15, 2019.',
       },
       {
         q: 'How long does a nomination take?',
@@ -48,7 +48,7 @@ const faqData = [
     questions: [
       {
         q: 'How does community voting work?',
-        a: 'Community voting opens for selected categories during the public voting window. One verified vote per person per category.',
+        a: 'In the 2019 season, community voting ran during the public voting window with one verified vote per person per category.',
       },
       {
         q: 'Can teams campaign for votes?',

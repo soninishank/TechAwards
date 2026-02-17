@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 
 const navItems = [
     { label: 'Categories', href: '/awards' },
+    { label: 'Selection Criteria', href: '/awards/selection-criteria' },
     { label: 'How It Works', href: '/awards/how-it-works' },
     { label: 'Voting', href: '/awards/voting' },
     { label: 'Judges', href: '/awards/judges' },
