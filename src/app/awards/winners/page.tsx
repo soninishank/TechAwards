@@ -10,15 +10,15 @@ const winners = [
     awards: [
       {
         type: "Judges' Choice",
-        name: 'SignalFoundry',
-        tagline: 'Applied AI platform for frontline operations',
+        name: 'SetuMind Labs',
+        tagline: 'Applied AI platform for logistics operations',
         city: 'Bengaluru',
         image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600&h=400',
       },
       {
         type: 'Community Choice',
-        name: 'Northline AI',
-        tagline: 'Workflow automation for modern support teams',
+        name: 'NabhAI Systems',
+        tagline: 'Workflow automation for growing support teams',
         city: 'Mumbai',
         image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600&h=400',
       },
@@ -29,16 +29,16 @@ const winners = [
     awards: [
       {
         type: "Judges' Choice",
-        name: 'Maya Patel',
-        tagline: 'Engineering Director at Railcore',
-        city: 'Delhi NCR',
+        name: 'Aditi Rao',
+        tagline: 'Engineering Director at Sutradhar Systems',
+        city: 'Bengaluru',
         image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600&h=400',
       },
       {
         type: 'Community Choice',
-        name: 'Jordan Lee',
-        tagline: 'VP Engineering at Stack Harbor',
-        city: 'Bengaluru',
+        name: 'Karthik Iyer',
+        tagline: 'VP Engineering at Pravaah Tech',
+        city: 'Chennai',
         image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=600&h=400',
       },
     ],
@@ -48,15 +48,15 @@ const winners = [
     awards: [
       {
         type: "Judges' Choice",
-        name: 'HarborStack',
-        tagline: 'High-trust culture with clear ownership',
+        name: 'Saarthi Cloud',
+        tagline: 'High-trust culture with clear team ownership',
         city: 'Bengaluru',
         image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600&h=400',
       },
       {
         type: 'Community Choice',
-        name: 'Lumenloop',
-        tagline: 'People-first team rituals at scale',
+        name: 'UdaanStack',
+        tagline: 'People-first engineering rituals at scale',
         city: 'Hyderabad',
         image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600&h=400',
       },
@@ -93,7 +93,7 @@ export default function WinnersPage() {
             transition={{ delay: 0.1 }}
             className="mx-auto max-w-2xl text-xl text-slate-300"
           >
-            Teams and leaders recognized for outstanding delivery, leadership, and community impact.
+            Teams and leaders recognized for outstanding delivery, leadership, and community impact at Taj MG Road, Bengaluru.
           </motion.p>
           <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-400">
             Demo data: winners shown here are sample entries for layout preview.
