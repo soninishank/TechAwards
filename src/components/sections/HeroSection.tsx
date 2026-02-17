@@ -21,7 +21,7 @@ export function HeroSection() {
             transition={{ duration: 0.4 }}
             className="mb-5 inline-flex items-center gap-2 rounded-full border border-amber-200/30 bg-amber-200/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-amber-100"
           >
-            2026 Tech Awards
+            2019 Tech Awards
           </motion.p>
 
           <motion.h1
@@ -39,7 +39,7 @@ export function HeroSection() {
             transition={{ duration: 0.45, delay: 0.2 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-slate-300 md:text-lg"
           >
-            One awards function, hundreds of nominations, and thousands of community members joining online and in-person to honor product, engineering, and culture leadership.
+            One awards function, hundreds of nominations, and thousands of community members joining in-person to honor product, engineering, and culture leadership.
           </motion.p>
 
           <motion.div
@@ -54,7 +54,7 @@ export function HeroSection() {
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-slate-300/50 bg-transparent text-slate-100 hover:bg-slate-900/50">
-              <Link href="/events">See Upcoming Events</Link>
+              <Link href="/events">See Event Timeline</Link>
             </Button>
           </motion.div>
         </div>
@@ -67,8 +67,8 @@ export function HeroSection() {
         >
           <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4">
             <p className="text-xs uppercase tracking-[0.15em] text-slate-400">Awards Night</p>
-            <p className="mt-2 flex items-center gap-2 text-sm text-slate-200"><Calendar className="h-4 w-4 text-amber-200" /> September 18, 2026</p>
-            <p className="mt-1 flex items-center gap-2 text-sm text-slate-300"><MapPin className="h-4 w-4 text-cyan-300" /> Austin, Texas + livestream</p>
+            <p className="mt-2 flex items-center gap-2 text-sm text-slate-200"><Calendar className="h-4 w-4 text-amber-200" /> September 15, 2019</p>
+            <p className="mt-1 flex items-center gap-2 text-sm text-slate-300"><MapPin className="h-4 w-4 text-cyan-300" /> Taj MG Road, Bengaluru</p>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
@@ -83,8 +83,8 @@ export function HeroSection() {
           </div>
 
           <div className="rounded-2xl border border-cyan-300/25 bg-cyan-400/8 p-4 text-sm text-slate-200">
-            <p className="flex items-center gap-2 font-medium text-cyan-200"><Users className="h-4 w-4" /> Community pass is open</p>
-            <p className="mt-2 text-slate-300">Join the audience, watch live judging highlights, and meet finalists across product, engineering, and design.</p>
+            <p className="flex items-center gap-2 font-medium text-cyan-200"><Users className="h-4 w-4" /> Event archive</p>
+            <p className="mt-2 text-slate-300">Explore finalists, judges, winners, and highlights from the 2019 awards function.</p>
           </div>
         </motion.div>
       </div>

@@ -31,7 +31,7 @@ export const awardCategories: AwardCategory[] = [
     {
         id: '4',
         title: 'Social Impact Award',
-        description: 'Celebrating technology solutions that are solving critical problems for India\'s underserved populations.',
+        description: 'Celebrating technology solutions that are addressing critical problems for underserved communities.',
         criteria: ['Measurable social impact', 'Scalability of the solution', 'Sustainable business model'],
         icon: 'Globe',
     },

@@ -29,10 +29,10 @@ export function Footer() {
             <Mail className="h-4 w-4" /> Submit a nomination
           </Link>
           <p className="flex items-center gap-2 text-slate-400">
-            <Calendar className="h-4 w-4" /> Awards Night: September 18, 2026
+            <Calendar className="h-4 w-4" /> Awards Night: September 15, 2019
           </p>
           <p className="flex items-center gap-2 text-slate-400">
-            <MapPin className="h-4 w-4" /> Austin, Texas + livestream
+            <MapPin className="h-4 w-4" /> Taj MG Road, Bengaluru
           </p>
         </div>
       </div>

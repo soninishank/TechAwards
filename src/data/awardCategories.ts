@@ -23,7 +23,7 @@ export const awardCategoryDetails: AwardCategoryDetail[] = [
       'User or revenue growth over the last 12 months',
       'Technical innovation and execution quality',
     ],
-    timeline: 'Finalist review in August 2026; winner announced at the September 18, 2026 awards function.',
+    timeline: 'Finalist review in August 2019; winner announced at the September 15, 2019 awards function.',
   },
   {
     slug: 'best-tech-work-culture',
@@ -39,7 +39,7 @@ export const awardCategoryDetails: AwardCategoryDetail[] = [
       'Inclusive and psychologically safe team culture',
       'Retention, engagement, and team outcomes',
     ],
-    timeline: 'Shortlisting closes in August 2026; winners are announced live in September 2026.',
+    timeline: 'Shortlisting closes in August 2019; winners are announced live in September 2019.',
   },
   {
     slug: 'best-tech-manager',
@@ -55,7 +55,7 @@ export const awardCategoryDetails: AwardCategoryDetail[] = [
       'Mentorship and talent development',
       'Cross-functional leadership and communication',
     ],
-    timeline: 'Interviews happen in August 2026 and final announcements happen on awards night.',
+    timeline: 'Interviews happened in August 2019 and final announcements happened on awards night.',
   },
   {
     slug: 'best-enterprise-tech',
@@ -71,7 +71,7 @@ export const awardCategoryDetails: AwardCategoryDetail[] = [
       'Operational reliability and performance improvements',
       'Business impact and adoption across teams',
     ],
-    timeline: 'Final enterprise judging round is held in early September 2026.',
+    timeline: 'Final enterprise judging round was held in early September 2019.',
   },
   {
     slug: 'tech-for-good',
@@ -87,7 +87,7 @@ export const awardCategoryDetails: AwardCategoryDetail[] = [
       'Scalability and sustainability of the solution',
       'Evidence-backed outcomes and accountability',
     ],
-    timeline: 'Community input is considered during August 2026 before final judging.',
+    timeline: 'Community input was considered during August 2019 before final judging.',
   },
   {
     slug: 'top-gentle-giant',
@@ -103,7 +103,7 @@ export const awardCategoryDetails: AwardCategoryDetail[] = [
       'Internal innovation and experimentation practices',
       'Leadership quality and long-term culture health',
     ],
-    timeline: 'Category winner announced during the live ceremony on September 18, 2026.',
+    timeline: 'Category winner announced during the live ceremony on September 15, 2019.',
   },
 ];
 

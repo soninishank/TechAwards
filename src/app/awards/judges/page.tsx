@@ -8,51 +8,51 @@ import Image from 'next/image';
 
 const judges = [
   {
-    name: 'Arylee McSweaney',
-    title: 'Director of Engineering',
-    company: 'Etsy',
+    name: 'Avery Coleman',
+    title: 'VP Engineering',
+    company: 'Northline Systems',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400',
   },
   {
-    name: 'Dr. Anita Jindal',
-    title: 'Senior Director of Engineering',
-    company: 'VMware',
+    name: 'Rina Solanki',
+    title: 'Director of Product',
+    company: 'HarborStack',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400',
   },
   {
-    name: 'Ziyun Liang',
-    title: 'Senior Product Designer',
-    company: 'The New York Times',
+    name: 'Theo Martin',
+    title: 'Head of Design',
+    company: 'Lumenloop',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400',
   },
   {
-    name: 'Tanvi S Hungund',
-    title: 'Senior Manager',
-    company: 'AWS',
+    name: 'Priya Anand',
+    title: 'Engineering Manager',
+    company: 'Railcore',
     image: 'https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80&w=400&h=400',
   },
   {
-    name: 'Rohan Gupta',
-    title: 'VP of Engineering',
-    company: 'Flipkart',
+    name: 'Mateo Cruz',
+    title: 'Staff Engineer',
+    company: 'OrbitLedger',
     image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400',
   },
   {
-    name: 'Sarah Chen',
-    title: 'Head of Product',
-    company: 'Zomato',
+    name: 'Noor Ibrahim',
+    title: 'Chief Product Officer',
+    company: 'Kiteframe',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400',
   },
   {
-    name: 'Michael Chang',
-    title: 'Chief Technology Officer',
-    company: 'Razorpay',
+    name: 'Ethan Shaw',
+    title: 'CTO',
+    company: 'MetricForge',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400',
   },
   {
-    name: 'Priya Sharma',
-    title: 'Director of AI',
-    company: 'Ola Electric',
+    name: 'Helen Brooks',
+    title: 'Director, Platform',
+    company: 'SignalFoundry',
     image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=400&h=400',
   },
 ];
@@ -75,12 +75,15 @@ export default function JudgesPage() {
             transition={{ delay: 0.1 }}
             className="mx-auto max-w-3xl text-xl text-slate-600 dark:text-slate-400"
           >
-            An esteemed panel of industry leaders, technologists, and innovators selecting the best of the best.
+            A panel of product, design, and engineering leaders selecting winners using transparent criteria.
           </motion.p>
+          <p className="mx-auto mt-4 max-w-3xl text-sm text-slate-500 dark:text-slate-400">
+            Demo data: judge profiles on this page are illustrative placeholders.
+          </p>
         </div>
       </section>
 
-      <section className="mx-auto grid w-full max-w-[1920px] grid-cols-1 gap-x-8 gap-y-12 px-6 py-20 md:px-12 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="mx-auto grid w-full max-w-[1920px] grid-cols-1 gap-x-8 gap-y-12 px-6 py-20 sm:grid-cols-2 md:px-12 lg:grid-cols-4">
         {judges.map((judge, index) => (
           <motion.div
             key={judge.name}
@@ -110,7 +113,7 @@ export default function JudgesPage() {
             </Link>
 
             <Link href="/awards/how-it-works" className="inline-flex items-center text-sm font-semibold text-cyan-600 hover:underline dark:text-cyan-400">
-              Read Bio <ChevronRight className="ml-0.5 h-4 w-4" />
+              Read Criteria <ChevronRight className="ml-0.5 h-4 w-4" />
             </Link>
           </motion.div>
         ))}
@@ -118,11 +121,9 @@ export default function JudgesPage() {
 
       <section className="w-full bg-slate-100 py-20 dark:bg-slate-900">
         <div className="mx-auto w-full max-w-[1920px] px-6 text-center md:px-12">
-          <h2 className="mb-6 font-display text-3xl font-medium tracking-tight text-slate-900 dark:text-white md:text-4xl">
-            Interested in Judging?
-          </h2>
+          <h2 className="mb-6 font-display text-3xl font-medium tracking-tight text-slate-900 dark:text-white md:text-4xl">Interested in Judging?</h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
-            Share your expertise and help recognize the next generation of tech talent.
+            Share your expertise and help us recognize teams doing outstanding work.
           </p>
           <div className="flex justify-center gap-4">
             <Button size="lg" className="bg-purple-600 text-white hover:bg-purple-700" asChild>
