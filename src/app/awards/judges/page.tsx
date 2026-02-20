@@ -9,14 +9,14 @@ import Image from 'next/image';
 const judges = [
   {
     name: 'Amit Kumar Sharma',
-    title: 'Judge',
-    company: 'Independent',
+    title: 'Senior Manager',
+    company: 'Amazon',
     linkedin: 'https://www.linkedin.com/in/amitkumar5268857/',
     image: '/amit.png',
   },
   {
     name: 'Sundar S Sankaran',
-    title: 'Judge',
+    title: 'Director of Engineering',
     company: '[24]7.ai',
     linkedin: 'https://www.linkedin.com/in/sundarssankaran/',
     image: '/sundar.jpg',
@@ -57,9 +57,7 @@ export default function JudgesPage() {
           >
             A panel of product, design, and engineering leaders selecting winners using transparent criteria.
           </motion.p>
-          <p className="mx-auto mt-4 max-w-3xl text-sm text-slate-500 dark:text-slate-400">
-            Demo data: judge profiles on this page are illustrative placeholders.
-          </p>
+
         </div>
       </section>
 

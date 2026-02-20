@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Building2, MapPin, Ticket } from 'lucide-react';
+import { Building2, MapPin, Ticket, Linkedin } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -31,6 +31,7 @@ const categories: Category[] = [
         city: 'Bengaluru',
         image: '/zerodha.png',
         imageClass: 'object-contain bg-white p-8',
+        linkedin: 'https://www.linkedin.com/company/zerodha/',
         note: 'Pioneered discount broking and scaled to millions of users without external funding.',
       },
       {
@@ -38,6 +39,7 @@ const categories: Category[] = [
         city: 'Bengaluru',
         image: '/cred.png',
         imageClass: 'object-contain bg-black p-8',
+        linkedin: 'https://www.linkedin.com/company/credapp/',
         note: 'Redefined fintech UX and scaled a high-trust community of creditworthy members.',
       },
       {
@@ -45,6 +47,7 @@ const categories: Category[] = [
         city: 'Bengaluru',
         image: '/swiggy.png',
         imageClass: 'object-contain bg-white p-8',
+        linkedin: 'https://www.linkedin.com/company/swiggy-in/',
         note: 'Built an unparalleled logistics fleet and transformed local commerce delivery.',
       },
       {
@@ -52,6 +55,7 @@ const categories: Category[] = [
         city: 'Bengaluru',
         image: '/postman.png',
         imageClass: 'object-contain bg-white p-8',
+        linkedin: 'https://www.linkedin.com/company/postman-platform/',
         note: 'Created the definitive API platform used by millions of developers globally.',
       },
     ],
@@ -66,6 +70,7 @@ const categories: Category[] = [
         city: 'Bengaluru',
         image: '/vijay.png',
         imageClass: 'object-cover object-[center_10%]',
+        linkedin: 'https://www.linkedin.com/in/vijay-anand-017b832/',
         note: 'Drove massive retail tech transformations globally from the India development center.',
       },
       {
@@ -102,36 +107,36 @@ const categories: Category[] = [
     description: 'Organizations proving people-first culture can drive stronger execution.',
     finalists: [
       {
-        name: 'Paytm',
-        city: 'Noida',
-        image: '/paytm.png',
-        imageClass: 'object-contain bg-white p-8',
-        linkedin: 'https://www.linkedin.com/company/paytm/',
-        note: 'Built a massive fintech ecosystem while fostering an intense, execution-focused culture.',
-      },
-      {
-        name: 'Media.net',
-        city: 'Mumbai',
-        image: '/media_net.png',
-        imageClass: 'object-contain bg-white p-8',
-        linkedin: 'https://www.linkedin.com/company/media.net/',
-        note: 'Established inclusive team practices tied to delivery outcomes across global ad-tech teams.',
-      },
-      {
-        name: 'Blinkit',
-        city: 'Gurugram',
-        image: '/blinkit.png',
-        imageClass: 'object-contain bg-yellow-400 p-8',
-        linkedin: 'https://www.linkedin.com/company/letsblinkit/',
-        note: 'Optimized hyper-local engineering while maintaining an intense, high-velocity work culture.',
-      },
-      {
-        name: 'Udaan',
+        name: 'Zerodha',
         city: 'Bengaluru',
-        image: '/udaan.png',
+        image: '/zerodha.png',
         imageClass: 'object-contain bg-white p-8',
-        linkedin: 'https://www.linkedin.com/company/udaan/',
-        note: 'B2B Buying for Retailers - engineered scalable systems while preserving a tight-knit, founder-led culture.',
+        linkedin: 'https://www.linkedin.com/company/zerodha/',
+        note: 'Proved that a bootstrapped team can build world-class tech with a focus on long-term value over short-term hype.',
+      },
+      {
+        name: 'CRED',
+        city: 'Bengaluru',
+        image: '/cred.png',
+        imageClass: 'object-contain bg-black p-8',
+        linkedin: 'https://www.linkedin.com/company/credapp/',
+        note: 'Cultivated a high-trust, design-led engineering culture where ownership and speed are paramount.',
+      },
+      {
+        name: 'Swiggy',
+        city: 'Bengaluru',
+        image: '/swiggy.png',
+        imageClass: 'object-contain bg-white p-8',
+        linkedin: 'https://www.linkedin.com/company/swiggy-in/',
+        note: 'Fostered a culture of winning together while solving massive logistics challenges at peak scale.',
+      },
+      {
+        name: 'Postman',
+        city: 'Bengaluru',
+        image: '/postman.png',
+        imageClass: 'object-contain bg-white p-8',
+        linkedin: 'https://www.linkedin.com/company/postman-platform/',
+        note: 'Built a global developer-first culture by empowering engineers to solve complex problems with autonomy.',
       },
     ],
   },
@@ -153,9 +158,7 @@ export default function FinalistsPage() {
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
               Finalist slate from the awards function held on September 15, 2019 at Taj MG Road, Bengaluru.
             </p>
-            <p className="mt-3 text-sm text-slate-400">
-              Demo data: finalist names and companies below are representative sample profiles.
-            </p>
+
           </div>
 
           <div className="grid gap-3 rounded-2xl border border-white/10 bg-slate-900/75 p-5">
@@ -209,7 +212,19 @@ export default function FinalistsPage() {
                   </div>
 
                   <div className="space-y-3 p-4">
-                    <h3 className="font-display text-xl text-white">{finalist.name}</h3>
+                    <div className="flex items-start justify-between gap-2">
+                      <h3 className="font-display text-xl text-white">{finalist.name}</h3>
+                      {finalist.linkedin && (
+                        <Link
+                          href={finalist.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="rounded-full bg-slate-800/80 p-1.5 text-cyan-400 ring-1 ring-white/20 shadow-lg shadow-black/20 transition-all hover:bg-cyan-500 hover:text-white hover:ring-cyan-400"
+                        >
+                          <Linkedin className="h-4 w-4" />
+                        </Link>
+                      )}
+                    </div>
                     {finalist.company && (
                       <p className="flex items-center gap-2 text-sm text-slate-300">
                         <Building2 className="h-4 w-4 text-cyan-300" /> {finalist.company}
