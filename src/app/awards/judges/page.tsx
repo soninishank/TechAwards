@@ -34,6 +34,7 @@ const judges = [
     company: 'BankBazaar',
     linkedin: 'https://www.linkedin.com/in/varsha-mahadevan-425969111/',
     image: '/varsha.png',
+    imageClass: 'brightness-110 contrast-[1.05]',
   },
 ];
 

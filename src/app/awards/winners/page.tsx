@@ -12,7 +12,7 @@ const winners = [
       {
         type: "Judges' Choice",
         name: 'Zerodha',
-        tagline: 'Bootstrapped trading platform scaling independently',
+        tagline: 'Pioneered discount broking and scaled to millions of users without external funding.',
         city: 'Bengaluru',
         image: '/zerodha.png',
         imageClass: 'object-contain p-6 bg-white',
@@ -21,7 +21,7 @@ const winners = [
       {
         type: 'Community Choice',
         name: 'Postman',
-        tagline: 'Global standard for API collaboration',
+        tagline: 'Created the definitive API platform used by millions of developers globally.',
         city: 'Bengaluru',
         image: '/postman.png',
         imageClass: 'object-contain p-6 bg-white',
@@ -58,7 +58,7 @@ const winners = [
       {
         type: "Judges' Choice",
         name: 'CRED',
-        tagline: 'High-trust, design-first engineering culture',
+        tagline: 'Cultivated a high-trust, design-led engineering culture where ownership and speed are paramount.',
         city: 'Bengaluru',
         image: '/cred.png',
         imageClass: 'object-contain p-6 bg-black',
@@ -67,7 +67,7 @@ const winners = [
       {
         type: 'Community Choice',
         name: 'Swiggy',
-        tagline: 'Solving massive scale logistics with strong engineering principles',
+        tagline: 'Fostered a culture of winning together while solving massive logistics challenges at peak scale.',
         city: 'Bengaluru',
         image: '/swiggy.png',
         imageClass: 'object-contain p-6 bg-white',
