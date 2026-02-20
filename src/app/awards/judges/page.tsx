@@ -8,52 +8,53 @@ import Image from 'next/image';
 
 const judges = [
   {
-    name: 'Vikram Gupta',
-    title: 'VP Engineering',
-    company: 'Arya Systems',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400',
-  },
-  {
-    name: 'Rina Solanki',
-    title: 'Director of Product',
-    company: 'Dharma Systems',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400',
-  },
-  {
-    name: 'Siddharth Joshi',
-    title: 'Head of Design',
-    company: 'Chakra Data',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400',
-  },
-  {
-    name: 'Priya Anand',
-    title: 'Engineering Manager',
-    company: 'RailDrishti',
-    image: 'https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80&w=400&h=400',
-  },
-  {
-    name: 'Rohan Mehta',
-    title: 'Staff Engineer',
-    company: 'Daksh Systems',
+    name: 'Kunal Shah',
+    title: 'Founder',
+    company: 'CRED',
     image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400',
   },
   {
-    name: 'Noor Ibrahim',
-    title: 'Chief Product Officer',
-    company: 'Garuda Aerospace',
+    name: 'Neha Narkhede',
+    title: 'Co-creator',
+    company: 'Confluent',
+    image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=400&h=400',
+  },
+  {
+    name: 'Nithin Kamath',
+    title: 'Founder & CEO',
+    company: 'Zerodha',
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=400',
+  },
+  {
+    name: 'Padmasree Warrior',
+    title: 'Former CTO',
+    company: 'Cisco',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400',
   },
   {
-    name: 'Aniketh Varma',
-    title: 'CTO',
-    company: 'Yantra Forge',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400',
+    name: 'Vijay Shekhar Sharma',
+    title: 'Founder & CEO',
+    company: 'Paytm',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400',
   },
   {
-    name: 'Kavita Nair',
-    title: 'Director, Platform',
-    company: 'Veda AI',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=400&h=400',
+    name: 'Gaurang Munjhe',
+    title: 'Engineering Leader',
+    company: 'Swiggy',
+    image: '/gaurang.png',
+    position: 'object-[center_20%]',
+  },
+  {
+    name: 'Sneha Desai',
+    title: 'VP Engineering',
+    company: 'Postman',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400',
+  },
+  {
+    name: 'Kailash Nadh',
+    title: 'CTO',
+    company: 'Zerodha',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=400&h=400',
   },
 ];
 
@@ -94,7 +95,7 @@ export default function JudgesPage() {
             className="group flex flex-col items-center text-center"
           >
             <div className="relative mb-6 h-48 w-48 overflow-hidden rounded-full ring-4 ring-slate-100 transition-all duration-300 group-hover:ring-cyan-400 dark:ring-slate-800 dark:group-hover:ring-cyan-500">
-              <Image src={judge.image} alt={judge.name} fill className="object-cover" />
+              <Image src={judge.image} alt={judge.name} fill className={`object-cover ${judge.position || ''}`} />
             </div>
 
             <h3 className="mb-1 font-display text-xl font-bold text-slate-900 dark:text-white">{judge.name}</h3>

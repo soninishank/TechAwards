@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Building2, MapPin, Sparkles, Ticket } from 'lucide-react';
+import { Building2, MapPin, Ticket } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,7 +9,9 @@ type Finalist = {
   name: string;
   city: string;
   image: string;
+  imageClass?: string;
   company?: string;
+  linkedin?: string;
   note: string;
 };
 
@@ -25,32 +27,32 @@ const categories: Category[] = [
     description: 'Early-stage teams with clear customer outcomes and strong product momentum.',
     finalists: [
       {
-        name: 'Veda AI',
+        name: 'Zerodha',
         city: 'Bengaluru',
-        image:
-          'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Built a production-grade AI workflow in under 8 months.',
+        image: '/zerodha.png',
+        imageClass: 'object-contain bg-white p-8',
+        note: 'Pioneered discount broking and scaled to millions of users without external funding.',
       },
       {
-        name: 'Arya Analytics',
-        city: 'Mumbai',
-        image:
-          'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Scaled monthly active users consistently through 2019.',
+        name: 'CRED',
+        city: 'Bengaluru',
+        image: '/cred.png',
+        imageClass: 'object-contain bg-black p-8',
+        note: 'Redefined fintech UX and scaled a high-trust community of creditworthy members.',
       },
       {
-        name: 'Vyom Labs',
-        city: 'Hyderabad',
-        image:
-          'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Shipped enterprise pilots with repeatable deployment playbook.',
+        name: 'Swiggy',
+        city: 'Bengaluru',
+        image: '/swiggy.png',
+        imageClass: 'object-contain bg-white p-8',
+        note: 'Built an unparalleled logistics fleet and transformed local commerce delivery.',
       },
       {
-        name: 'Daksh Systems',
-        city: 'Pune',
-        image:
-          'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Demonstrated high reliability under peak transaction periods.',
+        name: 'Postman',
+        city: 'Bengaluru',
+        image: '/postman.png',
+        imageClass: 'object-contain bg-white p-6',
+        note: 'Created the definitive API platform used by millions of developers globally.',
       },
     ],
   },
@@ -59,36 +61,35 @@ const categories: Category[] = [
     description: 'Leaders who combined delivery quality with strong team development.',
     finalists: [
       {
-        name: 'Rahul Iyer',
-        company: 'Kavach Security',
+        name: 'Vijay Anand',
+        company: 'Walmart',
         city: 'Bengaluru',
-        image:
-          'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Led cross-functional delivery during a high-growth quarter.',
+        image: '/vijay.png',
+        note: 'Drove massive retail tech transformations globally from the India development center.',
       },
       {
-        name: 'Maya Patel',
-        company: 'RailDrishti',
-        city: 'Delhi NCR',
-        image:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Raised engineering predictability with clear execution standards.',
+        name: 'Nipun Shah',
+        company: 'Amazon',
+        city: 'Bengaluru',
+        image: '/nipun.png',
+        linkedin: 'https://www.linkedin.com/in/nipuns/',
+        note: 'Head of Engineering - raised engineering predictability and transformed the consumer experience structure.',
       },
       {
-        name: 'Arjun Nair',
-        company: 'Sattva Cloud',
-        city: 'Chennai',
-        image:
-          'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Built a mentorship ladder that improved internal promotion rates.',
+        name: 'Ayushi Garg',
+        company: 'Flipkart',
+        city: 'Bengaluru',
+        image: '/ayushi.jpg',
+        linkedin: 'https://www.linkedin.com/in/ayushi-garg-a65595b2/',
+        note: 'Engineering Manager - led critical scaling initiatives and mentored high-performing engineering teams.',
       },
       {
-        name: 'Pooja Reddy',
-        company: 'Garuda Aerospace',
-        city: 'Pune',
-        image:
-          'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Improved planning quality across product and engineering teams.',
+        name: 'Pramod Prakash',
+        company: 'InMobi',
+        city: 'Bengaluru',
+        image: '/pramod.png',
+        linkedin: 'https://www.linkedin.com/in/pramod-prakash-a0540423/',
+        note: 'Head of Engineering - scaled deep tech platforms and mentored engineering talent globally.',
       },
     ],
   },
@@ -97,32 +98,36 @@ const categories: Category[] = [
     description: 'Organizations proving people-first culture can drive stronger execution.',
     finalists: [
       {
-        name: 'Dharma Systems',
-        city: 'Bengaluru',
-        image:
-          'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Maintained high retention through transparent team rituals.',
+        name: 'Paytm',
+        city: 'Noida',
+        image: '/paytm.png',
+        imageClass: 'object-contain bg-white p-6',
+        linkedin: 'https://www.linkedin.com/company/paytm/',
+        note: 'Built a massive fintech ecosystem while fostering an intense, execution-focused culture.',
       },
       {
-        name: 'Chakra Data',
-        city: 'Hyderabad',
-        image:
-          'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Scaled hiring while preserving onboarding quality and trust.',
-      },
-      {
-        name: 'Tattva Insights',
+        name: 'Media.net',
         city: 'Mumbai',
-        image:
-          'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Created measurable growth plans for engineers at all levels.',
+        image: '/media_net.png',
+        imageClass: 'object-contain bg-white p-6',
+        linkedin: 'https://www.linkedin.com/company/media.net/',
+        note: 'Established inclusive team practices tied to delivery outcomes across global ad-tech teams.',
       },
       {
-        name: 'Yantra Forge',
-        city: 'Chennai',
-        image:
-          'https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&q=80&w=600&h=450',
-        note: 'Established inclusive team practices tied to delivery outcomes.',
+        name: 'Blinkit',
+        city: 'Gurugram',
+        image: '/blinkit.png',
+        imageClass: 'object-contain bg-yellow-400 p-6',
+        linkedin: 'https://www.linkedin.com/company/letsblinkit/',
+        note: 'Optimized hyper-local engineering while maintaining an intense, high-velocity work culture.',
+      },
+      {
+        name: 'Udaan',
+        city: 'Bengaluru',
+        image: '/udaan.png',
+        imageClass: 'object-contain bg-white p-6',
+        linkedin: 'https://www.linkedin.com/company/udaan/',
+        note: 'B2B Buying for Retailers - engineered scalable systems while preserving a tight-knit, founder-led culture.',
       },
     ],
   },
@@ -195,12 +200,11 @@ export default function FinalistsPage() {
                       src={finalist.image}
                       alt={finalist.name}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className={`transition-transform duration-500 group-hover:scale-105 ${finalist.imageClass || 'object-cover'}`}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/10 to-transparent" />
-                    <span className="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full border border-white/25 bg-slate-950/60 px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-slate-200">
-                      <Sparkles className="h-3 w-3" /> Finalist
-                    </span>
+                    {category.title !== 'Best Tech Startup' && (
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/10 to-transparent" />
+                    )}
                   </div>
 
                   <div className="space-y-3 p-4">

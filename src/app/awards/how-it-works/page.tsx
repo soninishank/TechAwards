@@ -80,7 +80,7 @@ export default function HowItWorksPage() {
                   <step.icon className="h-5 w-5" />
                 </div>
 
-                <div className="w-[calc(100%-4rem)] rounded-xl border border-slate-100 bg-white p-6 shadow-md dark:border-slate-800 dark:bg-slate-900 md:w-[calc(50%-2.5rem)]">
+                <div className="w-[calc(100%-4rem)] rounded-xl border border-slate-100 bg-white p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-amber-400/50 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-amber-400/50 md:w-[calc(50%-2.5rem)]">
                   <div className="mb-2 flex items-center justify-between">
                     <h3 className="font-display text-xl font-bold text-slate-900 dark:text-white">{step.title}</h3>
                     <div className="flex items-center rounded bg-purple-50 px-2 py-1 text-sm font-medium text-purple-600 dark:bg-purple-900/20 dark:text-purple-400">

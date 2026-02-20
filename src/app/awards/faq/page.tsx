@@ -61,12 +61,13 @@ const faqData = [
 export default function FAQPage() {
   return (
     <div className="min-h-screen w-full bg-white dark:bg-slate-950">
-      <section className="border-b border-slate-100 bg-slate-50 px-6 py-20 text-center dark:border-slate-800 dark:bg-slate-900 md:px-12">
-        <div className="mx-auto max-w-[1920px]">
+      <section className="relative overflow-hidden bg-slate-900 py-20 text-center text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-900 to-amber-900 opacity-90" />
+        <div className="relative z-10 mx-auto max-w-[1920px]">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mb-6 font-display text-4xl font-medium tracking-tight text-slate-900 dark:text-white md:text-6xl"
+            className="mb-6 font-display text-4xl font-medium tracking-tight md:text-6xl"
           >
             Frequently Asked Questions
           </motion.h1>
@@ -74,7 +75,7 @@ export default function FAQPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="mx-auto max-w-3xl text-xl text-slate-600 dark:text-slate-400"
+            className="mx-auto max-w-3xl text-xl text-slate-200"
           >
             Everything you need to know about nominations, judging, and voting for the National Technology Excellence Award.
           </motion.p>
@@ -110,8 +111,8 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       >
         <span
           className={`pr-8 text-lg font-medium transition-colors ${isOpen
-              ? 'text-cyan-600 dark:text-cyan-400'
-              : 'text-slate-900 group-hover:text-cyan-600 dark:text-white dark:group-hover:text-cyan-400'
+            ? 'text-cyan-600 dark:text-cyan-400'
+            : 'text-slate-900 group-hover:text-cyan-600 dark:text-white dark:group-hover:text-cyan-400'
             }`}
         >
           {question}

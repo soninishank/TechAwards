@@ -10,16 +10,16 @@ const winners = [
     awards: [
       {
         type: "Judges' Choice",
-        name: 'SetuMind Labs',
-        tagline: 'Applied AI platform for logistics operations',
+        name: 'Zerodha',
+        tagline: 'Bootstrapped trading platform scaling independently',
         city: 'Bengaluru',
         image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600&h=400',
       },
       {
         type: 'Community Choice',
-        name: 'NabhAI Systems',
-        tagline: 'Workflow automation for growing support teams',
-        city: 'Mumbai',
+        name: 'Postman',
+        tagline: 'Global standard for API collaboration',
+        city: 'Bengaluru',
         image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600&h=400',
       },
     ],
@@ -29,17 +29,17 @@ const winners = [
     awards: [
       {
         type: "Judges' Choice",
-        name: 'Aditi Rao',
-        tagline: 'Engineering Director at Sutradhar Systems',
+        name: 'Gaurang Munjhe',
+        tagline: 'Engineering Leader driving scalable system architectures',
         city: 'Bengaluru',
-        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600&h=400',
+        image: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=600&h=400',
       },
       {
         type: 'Community Choice',
-        name: 'Karthik Iyer',
-        tagline: 'VP Engineering at Pravaah Tech',
-        city: 'Chennai',
-        image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=600&h=400',
+        name: 'Sneha Desai',
+        tagline: 'VP Engineering redefining agile delivery culture',
+        city: 'Mumbai',
+        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600&h=400',
       },
     ],
   },
@@ -48,16 +48,16 @@ const winners = [
     awards: [
       {
         type: "Judges' Choice",
-        name: 'Saarthi Cloud',
-        tagline: 'High-trust culture with clear team ownership',
+        name: 'CRED',
+        tagline: 'High-trust, design-first engineering culture',
         city: 'Bengaluru',
         image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600&h=400',
       },
       {
         type: 'Community Choice',
-        name: 'UdaanStack',
-        tagline: 'People-first engineering rituals at scale',
-        city: 'Hyderabad',
+        name: 'Swiggy',
+        tagline: 'Solving massive scale logistics with strong engineering principles',
+        city: 'Bengaluru',
         image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600&h=400',
       },
     ],
@@ -131,11 +131,10 @@ export default function WinnersPage() {
                   <div className="relative bg-slate-900 p-8 text-center">
                     <div className="absolute -top-5 left-1/2 -translate-x-1/2">
                       <span
-                        className={`rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-widest shadow-lg ${
-                          award.type === "Judges' Choice"
+                        className={`rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-widest shadow-lg ${award.type === "Judges' Choice"
                             ? 'border-cyan-900 bg-slate-950 text-cyan-400'
                             : 'border-purple-900 bg-slate-950 text-purple-400'
-                        }`}
+                          }`}
                       >
                         {award.type === "Judges' Choice" ? (
                           <Trophy className="-mt-0.5 mr-1 inline h-3 w-3" />

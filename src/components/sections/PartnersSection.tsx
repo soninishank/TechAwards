@@ -32,7 +32,7 @@ export function PartnersSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: index * 0.05 }}
               viewport={{ once: true }}
-              className="grid h-16 place-items-center rounded-2xl border border-white/10 bg-slate-900/65 text-sm font-semibold tracking-wide text-slate-100"
+              className="grid h-20 place-items-center rounded-2xl border border-white/10 bg-slate-900/60 p-6 text-lg font-bold tracking-wide text-slate-300 backdrop-blur-md transition-all hover:border-amber-400/30 hover:bg-slate-800/80 hover:text-amber-200"
             >
               {partner}
             </motion.div>

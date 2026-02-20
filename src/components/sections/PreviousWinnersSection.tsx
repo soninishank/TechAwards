@@ -50,16 +50,21 @@ export function PreviousWinnersSection() {
                             viewport={{ once: true }}
                             className="group h-full block"
                         >
-                            <Card className="h-full border-slate-800 bg-slate-900/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-amber-500/50 hover:bg-slate-800/80 hover:shadow-[0_10px_30px_-15px_rgba(251,191,36,0.3)]">
-                                <CardHeader className="pb-4">
-                                    <div className="mb-3 inline-flex rounded-xl border border-slate-700 bg-slate-800 p-3 transition-colors duration-300 group-hover:border-amber-400/50 group-hover:bg-amber-400/10">
-                                        <winner.icon className="h-6 w-6 text-amber-400 group-hover:text-amber-300" />
+                            <Card className="relative h-full overflow-hidden border-slate-800 bg-slate-900/50 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-amber-500/30 hover:bg-slate-800/80 hover:shadow-[0_20px_40px_-15px_rgba(251,191,36,0.15)] group-hover:before:opacity-100 before:absolute before:inset-0 before:bg-gradient-to-br before:from-amber-400/10 before:via-transparent before:to-transparent before:opacity-0 before:transition-opacity before:duration-500">
+                                <CardHeader className="relative pb-4 pt-6">
+                                    <div className="mb-4 inline-flex rounded-2xl border border-slate-700 bg-slate-800/80 p-3.5 shadow-inner transition-all duration-300 group-hover:scale-110 group-hover:border-amber-400/50 group-hover:bg-amber-400/10 group-hover:shadow-[0_0_20px_rgba(251,191,36,0.2)]">
+                                        <winner.icon className="h-6 w-6 text-amber-400 transition-colors duration-300 group-hover:text-amber-300" />
                                     </div>
-                                    <CardTitle className="text-xl text-white">{winner.name}</CardTitle>
+                                    <CardTitle className="text-2xl font-bold tracking-tight text-white">{winner.name}</CardTitle>
                                 </CardHeader>
-                                <CardContent>
-                                    <p className="font-medium text-amber-200">{winner.category} <span className="text-slate-500">({winner.year})</span></p>
-                                    <p className="mt-1 text-sm text-slate-400">{winner.company}</p>
+                                <CardContent className="relative">
+                                    <p className="mb-6 font-medium tracking-wide text-amber-200">{winner.category} <span className="opacity-50">({winner.year})</span></p>
+
+                                    <div className="mt-auto border-t border-slate-800 pt-4 transition-colors duration-300 group-hover:border-slate-700/80">
+                                        <p className="text-sm font-semibold uppercase tracking-wider text-slate-400 group-hover:text-slate-300">
+                                            {winner.company}
+                                        </p>
+                                    </div>
                                 </CardContent>
                             </Card>
                         </motion.div>

@@ -40,7 +40,7 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 md:flex">
           <Button asChild variant="outline" className="border-amber-300/60 bg-transparent text-amber-100 hover:bg-amber-200/10">
-            <Link href="/awards/contact">Nominate</Link>
+            <Link href="/awards/nominate">Nominate</Link>
           </Button>
           <Button asChild className="bg-amber-300 text-slate-900 hover:bg-amber-200">
             <Link href="/events">Join Event</Link>
@@ -77,7 +77,7 @@ export function Navbar() {
                 </Link>
               ))}
               <Button asChild className="mt-2 bg-amber-300 text-slate-900 hover:bg-amber-200">
-                <Link href="/awards/contact" onClick={() => setIsOpen(false)}>
+                <Link href="/awards/nominate" onClick={() => setIsOpen(false)}>
                   Nominate a Company
                 </Link>
               </Button>

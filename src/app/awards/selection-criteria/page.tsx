@@ -69,7 +69,7 @@ export default function SelectionCriteriaPage() {
         <h2 className="mb-6 font-display text-3xl text-white">Weighted Scorecard</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {scorecard.map((item) => (
-            <div key={item.title} className="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+            <div key={item.title} className="rounded-2xl border border-white/10 bg-slate-900/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-amber-400/50 hover:bg-slate-800/80 hover:shadow-[0_10px_30px_-15px_rgba(251,191,36,0.3)]">
               <div className="mb-2 flex items-center justify-between">
                 <h3 className="font-display text-xl text-white">{item.title}</h3>
                 <span className="rounded-full border border-amber-300/50 bg-amber-200/10 px-3 py-1 text-xs font-semibold text-amber-100">
@@ -83,7 +83,7 @@ export default function SelectionCriteriaPage() {
       </section>
 
       <section className="mx-auto grid w-full max-w-[1200px] grid-cols-1 gap-6 px-6 pb-16 md:grid-cols-2 md:px-10">
-        <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+        <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50 hover:bg-slate-800/80 hover:shadow-[0_10px_30px_-15px_rgba(34,211,238,0.3)]">
           <h3 className="mb-3 font-display text-2xl text-white">Submission Requirements</h3>
           <ul className="list-disc space-y-2 pl-5 text-sm text-slate-300">
             {requirements.map((item) => (
@@ -92,7 +92,7 @@ export default function SelectionCriteriaPage() {
           </ul>
         </div>
 
-        <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+        <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-purple-400/50 hover:bg-slate-800/80 hover:shadow-[0_10px_30px_-15px_rgba(168,85,247,0.3)]">
           <h3 className="mb-3 font-display text-2xl text-white">Governance Guardrails</h3>
           <ul className="list-disc space-y-2 pl-5 text-sm text-slate-300">
             {guardrails.map((item) => (

@@ -25,7 +25,7 @@ export function Footer() {
 
         <div className="space-y-3 text-sm">
           <h3 className="font-display text-base text-white">Get Involved</h3>
-          <Link href="/awards/contact" className="inline-flex items-center gap-2 hover:text-amber-200 transition-colors" aria-label="Submit a nomination for the upcoming awards">
+          <Link href="/awards/nominate" className="inline-flex items-center gap-2 hover:text-amber-200 transition-colors" aria-label="Submit a nomination for the upcoming awards">
             <Mail className="h-4 w-4" aria-hidden="true" /> Submit a nomination
           </Link>
           <p className="flex items-center gap-2 text-slate-400">

@@ -28,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${archivo.variable} font-sans min-h-screen flex flex-col`}>
+    <html lang="en" className="dark">
+      <body className={`${inter.variable} ${archivo.variable} font-sans min-h-screen flex flex-col bg-slate-950 text-slate-100`}>
         <Navbar />
         <main className="flex-1">
           {children}

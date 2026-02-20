@@ -14,6 +14,7 @@ const navItems = [
     { label: 'Finalists', href: '/awards/finalists' },
     { label: 'Winners', href: '/awards/winners' },
     { label: 'FAQ', href: '/awards/faq' },
+    { label: 'Nominate', href: '/awards/nominate' },
     { label: 'Contact', href: '/awards/contact' },
 ];
 
@@ -21,7 +22,7 @@ export function AwardsSubNav() {
     const pathname = usePathname();
 
     return (
-        <div className="sticky top-16 z-40 w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur border-b border-slate-200 dark:border-slate-800">
+        <div className="sticky top-16 z-40 w-full border-b border-white/5 bg-slate-950/80 backdrop-blur-md">
             <div className="w-full max-w-[1920px] mx-auto px-6 md:px-12">
                 <nav className="flex items-center overflow-x-auto no-scrollbar">
                     {navItems.map((item) => {
@@ -33,15 +34,15 @@ export function AwardsSubNav() {
                                 className={cn(
                                     "relative flex items-center px-4 py-4 text-sm font-medium whitespace-nowrap transition-colors",
                                     isActive
-                                        ? "text-cyan-600 dark:text-cyan-400"
-                                        : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200"
+                                        ? "text-cyan-300"
+                                        : "text-slate-400 hover:text-slate-200"
                                 )}
                             >
                                 {item.label}
                                 {isActive && (
                                     <motion.div
                                         layoutId="activeTab"
-                                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-cyan-600 dark:bg-cyan-400"
+                                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-cyan-400"
                                         initial={false}
                                         transition={{ type: "spring", stiffness: 500, damping: 30 }}
                                     />
