@@ -60,7 +60,7 @@ export default function SelectionCriteriaPage() {
             transition={{ delay: 0.1 }}
             className="mx-auto max-w-3xl text-lg text-slate-200"
           >
-            Professional judging framework used for the 2019 Tech Award Summit season.
+            Professional judging framework used for the 2019 National Technology Excellence Award season.
           </motion.p>
         </div>
       </section>

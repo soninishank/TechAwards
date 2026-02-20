@@ -8,10 +8,10 @@ export function Footer() {
         <div className="space-y-4">
           <Link href="/" className="flex items-center gap-2 font-display text-lg font-semibold text-white">
             <Trophy className="h-5 w-5 text-amber-200" />
-            Tech Award Summit
+            National Technology Excellence Award
           </Link>
           <p className="max-w-sm text-sm leading-relaxed text-slate-400">
-            A community-led awards program spotlighting teams, builders, and leaders shaping the next wave of technology.
+            A national-level awards program spotlighting teams, builders, and leaders shaping the next wave of technology.
           </p>
         </div>
 
@@ -29,16 +29,17 @@ export function Footer() {
             <Mail className="h-4 w-4" /> Submit a nomination
           </Link>
           <p className="flex items-center gap-2 text-slate-400">
-            <Calendar className="h-4 w-4" /> Awards Night: September 15, 2019
+            <Calendar className="h-4 w-4" /> September 15, 2019, 6:00 PM - 10:00 PM IST
           </p>
-          <p className="flex items-center gap-2 text-slate-400">
-            <MapPin className="h-4 w-4" /> Taj MG Road, Bengaluru
+          <p className="flex items-start gap-2 text-slate-400">
+            <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
+            <span>Taj MG Road, 41/3, Mahatma Gandhi Rd, Bengaluru, Karnataka 560001</span>
           </p>
         </div>
       </div>
 
       <div className="border-t border-white/10 px-6 py-5 text-center text-xs text-slate-500 md:px-10">
-        <p>&copy; {new Date().getFullYear()} Tech Award Summit. All rights reserved.</p>
+        <p>&copy; 2019 National Technology Excellence Award. All rights reserved.</p>
       </div>
     </footer>
   );

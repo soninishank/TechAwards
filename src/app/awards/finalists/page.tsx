@@ -139,7 +139,7 @@ export default function FinalistsPage() {
               2019 Awards Archive
             </p>
             <h1 className="font-display text-4xl leading-[1.04] text-white md:text-6xl">
-              2019 Tech Award Summit Finalists
+              2019 National Technology Excellence Award Finalists
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
               Finalist slate from the awards function held on September 15, 2019 at Taj MG Road, Bengaluru.

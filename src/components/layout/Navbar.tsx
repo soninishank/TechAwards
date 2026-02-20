@@ -22,7 +22,7 @@ export function Navbar() {
           <span className="grid h-9 w-9 place-items-center rounded-full border border-amber-300/50 bg-amber-300/10 text-amber-200">
             <Trophy className="h-4 w-4" />
           </span>
-          Tech Award Summit
+          National Technology Excellence Award
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

@@ -22,7 +22,7 @@ const faqData = [
       },
       {
         q: 'Is there a nomination fee?',
-        a: 'No. Nominations for Tech Award Summit are free.',
+        a: 'No. Nominations for the National Technology Excellence Award are free.',
       },
     ],
   },
@@ -76,7 +76,7 @@ export default function FAQPage() {
             transition={{ delay: 0.1 }}
             className="mx-auto max-w-3xl text-xl text-slate-600 dark:text-slate-400"
           >
-            Everything you need to know about nominations, judging, and voting.
+            Everything you need to know about nominations, judging, and voting for the National Technology Excellence Award.
           </motion.p>
         </div>
       </section>
@@ -109,18 +109,16 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         className="group flex w-full items-center justify-between py-6 text-left focus:outline-none"
       >
         <span
-          className={`pr-8 text-lg font-medium transition-colors ${
-            isOpen
+          className={`pr-8 text-lg font-medium transition-colors ${isOpen
               ? 'text-cyan-600 dark:text-cyan-400'
               : 'text-slate-900 group-hover:text-cyan-600 dark:text-white dark:group-hover:text-cyan-400'
-          }`}
+            }`}
         >
           {question}
         </span>
         <ChevronDown
-          className={`h-5 w-5 text-slate-400 transition-transform duration-300 ${
-            isOpen ? 'rotate-180 text-cyan-600 dark:text-cyan-400' : ''
-          }`}
+          className={`h-5 w-5 text-slate-400 transition-transform duration-300 ${isOpen ? 'rotate-180 text-cyan-600 dark:text-cyan-400' : ''
+            }`}
         />
       </button>
       <motion.div

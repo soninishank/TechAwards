@@ -34,7 +34,7 @@ const steps = [
     id: 4,
     title: 'Awards Function',
     date: 'September 15, 2019',
-    description: 'Winners were announced live at Tech Award Summit at Taj MG Road, Bengaluru.',
+    description: 'Winners were announced live at the National Technology Excellence Award ceremony at Taj MG Road, Bengaluru.',
     icon: Trophy,
     color: 'bg-yellow-500',
   },
@@ -59,7 +59,7 @@ export default function HowItWorksPage() {
             transition={{ delay: 0.1 }}
             className="mx-auto max-w-2xl text-xl text-slate-200"
           >
-            Archived process of Tech Award Summit 2019, from nomination to awards night.
+            Archived process of the 2019 National Technology Excellence Award, from nomination to awards night.
           </motion.p>
         </div>
       </section>

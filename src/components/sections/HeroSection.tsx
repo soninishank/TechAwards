@@ -21,7 +21,7 @@ export function HeroSection() {
             transition={{ duration: 0.4 }}
             className="mb-5 inline-flex items-center gap-2 rounded-full border border-amber-200/30 bg-amber-200/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-amber-100"
           >
-            2019 Tech Awards
+            2019 National Technology Excellence Award
           </motion.p>
 
           <motion.h1
@@ -30,7 +30,7 @@ export function HeroSection() {
             transition={{ duration: 0.45, delay: 0.1 }}
             className="max-w-3xl font-display text-4xl leading-[1.05] text-white sm:text-5xl md:text-7xl"
           >
-            Celebrate the teams and people building what’s next.
+            National-level recognition for outstanding technology leadership.
           </motion.h1>
 
           <motion.p
@@ -39,7 +39,7 @@ export function HeroSection() {
             transition={{ duration: 0.45, delay: 0.2 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-slate-300 md:text-lg"
           >
-            One awards function, hundreds of nominations, and thousands of community members joining in-person to honor product, engineering, and culture leadership.
+            A prestigious honor celebrating the industry&apos;s most innovative and impactful teams, engineers, and emerging leaders.
           </motion.p>
 
           <motion.div
@@ -67,8 +67,11 @@ export function HeroSection() {
         >
           <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4">
             <p className="text-xs uppercase tracking-[0.15em] text-slate-400">Awards Night</p>
-            <p className="mt-2 flex items-center gap-2 text-sm text-slate-200"><Calendar className="h-4 w-4 text-amber-200" /> September 15, 2019</p>
-            <p className="mt-1 flex items-center gap-2 text-sm text-slate-300"><MapPin className="h-4 w-4 text-cyan-300" /> Taj MG Road, Bengaluru</p>
+            <p className="mt-2 flex items-center gap-2 text-sm text-slate-200"><Calendar className="h-4 w-4 text-amber-200 shrink-0" /> September 15, 2019, 6:00 PM - 10:00 PM</p>
+            <p className="mt-1 flex items-start gap-2 text-sm text-slate-300">
+              <MapPin className="mt-0.5 h-4 w-4 text-cyan-300 shrink-0" />
+              <span>Taj MG Road, 41/3, Mahatma Gandhi Rd, Bengaluru</span>
+            </p>
           </div>
 
           <div className="grid grid-cols-2 gap-3">

@@ -108,7 +108,7 @@ export default function ContactPage() {
             transition={{ delay: 0.1 }}
             className="mx-auto max-w-3xl text-xl text-slate-600 dark:text-slate-400"
           >
-            Get in touch with the Tech Award Summit team.
+            Get in touch with the National Technology Excellence Award team.
           </motion.p>
         </div>
       </section>
@@ -257,9 +257,9 @@ export default function ContactPage() {
 
             <div className="rounded-xl border border-slate-200 bg-slate-100 p-8 dark:border-slate-800 dark:bg-slate-900">
               <h3 className="mb-4 font-display text-xl font-bold text-slate-900 dark:text-white">Sponsorship</h3>
-              <p className="mb-4 text-slate-600 dark:text-slate-400">Interested in sponsoring Tech Award Summit?</p>
+              <p className="mb-4 text-slate-600 dark:text-slate-400">Interested in sponsoring the National Technology Excellence Award?</p>
               <Button variant="outline" className="w-full" asChild>
-                <Link href="mailto:sponsorship@techawardsummit.in?subject=Tech%20Award%20Summit%202019%20Sponsorship%20Inquiry">
+                <Link href="mailto:sponsorship@nationaltechexcellence.in?subject=National%20Technology%20Excellence%20Award%202019%20Sponsorship%20Inquiry">
                   Contact Sponsorship Team
                 </Link>
               </Button>

@@ -17,9 +17,9 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: 'Tech Award Summit | Awards + Community Events',
+  title: 'National Technology Excellence Award | Awards + Community Events',
   description:
-    'A community-first technology awards function with nominations, finalists, judges, and event participation across cities.',
+    'A national-level technology awards function with nominations, finalists, judges, and event participation across cities.',
 };
 
 export default function RootLayout({

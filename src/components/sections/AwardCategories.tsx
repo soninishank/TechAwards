@@ -26,7 +26,7 @@ const categories: Category[] = [
   { slug: 'best-tech-manager', icon: Target },
   { slug: 'best-enterprise-tech', icon: Trophy },
   { slug: 'tech-for-good', icon: Lightbulb },
-  { slug: 'top-gentle-giant', icon: Star },
+  { slug: 'rising-star', icon: Star },
 ];
 
 export function AwardCategories() {
@@ -56,30 +56,31 @@ export function AwardCategories() {
 
             return (
               <motion.div
-              key={details.slug}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.35, delay: index * 0.05 }}
-              viewport={{ once: true }}
-            >
-              <Link href={`/awards/${details.slug}`} className="group block h-full">
-                <Card className="h-full border-white/10 bg-slate-950/70 text-slate-100 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-amber-300/50 group-hover:shadow-[0_20px_50px_rgba(251,191,36,0.1)]">
-                  <CardHeader>
-                    <div className="mb-3 inline-flex w-fit rounded-xl border border-cyan-300/40 bg-cyan-400/10 p-2 text-cyan-200">
-                      <category.icon className="h-5 w-5" />
-                    </div>
-                    <CardTitle className="text-xl text-white">{details.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm leading-relaxed text-slate-400">{details.shortDescription}</p>
-                    <span className="mt-4 inline-flex items-center text-sm font-medium text-amber-200">
-                      View details <ChevronRight className="ml-1 h-4 w-4" />
-                    </span>
-                  </CardContent>
-                </Card>
-              </Link>
-            </motion.div>
-          )})}
+                key={details.slug}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.35, delay: index * 0.05 }}
+                viewport={{ once: true }}
+              >
+                <Link href={`/awards/${details.slug}`} className="group block h-full">
+                  <Card className="h-full border-white/10 bg-slate-950/70 text-slate-100 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-amber-300/50 group-hover:shadow-[0_20px_50px_rgba(251,191,36,0.1)]">
+                    <CardHeader>
+                      <div className="mb-3 inline-flex w-fit rounded-xl border border-cyan-300/40 bg-cyan-400/10 p-2 text-cyan-200">
+                        <category.icon className="h-5 w-5" />
+                      </div>
+                      <CardTitle className="text-xl text-white">{details.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm leading-relaxed text-slate-400">{details.shortDescription}</p>
+                      <span className="mt-4 inline-flex items-center text-sm font-medium text-amber-200">
+                        View details <ChevronRight className="ml-1 h-4 w-4" />
+                      </span>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </section>

@@ -22,7 +22,7 @@ export const events: Event[] = [
     description:
       'Meet the shortlisted teams, hear 5-minute finalist presentations, and network with judges before final scoring week.',
     image:
-      'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1200',
     registrationLink: '/awards/finalists',
     status: 'past',
   },
@@ -36,13 +36,13 @@ export const events: Event[] = [
     description:
       'An invite-only session where judges reviewed nomination trends and category scoring consistency.',
     image:
-      'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1200',
     registrationLink: '/awards/contact',
     status: 'past',
   },
   {
     id: '3',
-    title: 'Tech Award Summit 2019: Awards Function',
+    title: 'National Technology Excellence Award 2019: Awards Function',
     date: 'September 15, 2019',
     time: '6:00 PM - 10:00 PM IST',
     location: 'Taj MG Road, Bengaluru',
@@ -50,7 +50,7 @@ export const events: Event[] = [
     description:
       'Finalists, judges, and community members gathered for winner announcements and celebration.',
     image:
-      'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1475721025870-246d65427b3d?auto=format&fit=crop&q=80&w=1200',
     registrationLink: '/events',
     status: 'past',
   },
@@ -64,7 +64,7 @@ export const events: Event[] = [
     description:
       'Winners shared what changed after recognition, including hiring momentum and community visibility.',
     image:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1200',
     registrationLink: '/awards/winners',
     status: 'past',
   },

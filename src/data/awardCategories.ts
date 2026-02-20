@@ -90,18 +90,18 @@ export const awardCategoryDetails: AwardCategoryDetail[] = [
     timeline: 'Community input was considered during August 2019 before final judging.',
   },
   {
-    slug: 'top-gentle-giant',
-    title: 'Top Gentle Giant',
+    slug: 'rising-star',
+    title: 'Rising Star',
     shortDescription:
-      'Honoring larger companies that stay agile, curious, and builder-focused as they scale.',
+      'Honoring exceptional talent with 1-2 years of experience showing incredible early-career impact.',
     description:
-      'Recognizes mature organizations that preserve speed, experimentation, and people-first values while growing.',
+      'Recognizes young innovators, emerging leaders, and individual contributors who have driven outsized results early in their careers.',
     whoShouldApply:
-      'Large-scale companies with established teams and evidence of innovation culture.',
+      'Professionals with 1-2 years of work experience who have already delivered significant value to their teams.',
     judgingCriteria: [
-      'Ability to ship quickly at scale',
-      'Internal innovation and experimentation practices',
-      'Leadership quality and long-term culture health',
+      'Velocity of learning and execution',
+      'Impact of delivered projects',
+      'Initiative and problem-solving abilities',
     ],
     timeline: 'Category winner announced during the live ceremony on September 15, 2019.',
   },

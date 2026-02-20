@@ -10,7 +10,7 @@ export default function AboutPage() {
                     Celebrating Technology Builders, Together
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-[800px] mx-auto">
-                    Tech Award Summit is a community-led platform dedicated to connecting, empowering, and recognizing people building meaningful technology.
+                    The National Technology Excellence Award is a premier platform dedicated to connecting, empowering, and recognizing people building meaningful technology.
                 </p>
             </div>
 
@@ -22,7 +22,7 @@ export default function AboutPage() {
                         It started with a simple observation: incredible product and engineering work often goes unseen outside individual company circles. Teams ship quietly, leaders mentor silently, and communities miss chances to learn from one another.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                        Tech Award Summit was created to bridge that gap. Through awards, finalist showcases, and events, we help people discover who is raising the bar and why their work matters.
+                        The National Technology Excellence Award was created to bridge that gap. Through awards, finalist showcases, and events, we help people discover who is raising the bar and why their work matters.
                     </p>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
