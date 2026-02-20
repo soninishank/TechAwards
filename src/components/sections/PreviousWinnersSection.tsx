@@ -1,19 +1,19 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Award, Star, Users, Briefcase } from 'lucide-react';
+import { Star, Users, Briefcase } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const winners = [
     {
-        name: 'Nishank Soni',
+        name: 'Gaurang Munjhe',
         category: 'Rising Star',
         company: 'Tech Innovators Inc.',
         year: '2019',
         icon: Star,
     },
     {
-        name: 'Sarah Chen',
+        name: 'Sneha Desai',
         category: 'Best Tech Manager',
         company: 'CloudScale',
         year: '2018',
@@ -44,20 +44,21 @@ export function PreviousWinnersSection() {
                     {winners.map((winner, index) => (
                         <motion.div
                             key={winner.name}
-                            initial={{ opacity: 0, y: 16 }}
+                            initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.35, delay: index * 0.1 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}
+                            className="group h-full block"
                         >
-                            <Card className="h-full border-white/10 bg-slate-900/40 text-slate-100 transition-all hover:bg-slate-900/60 hover:border-cyan-300/30">
+                            <Card className="h-full border-slate-800 bg-slate-900/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-amber-500/50 hover:bg-slate-800/80 hover:shadow-[0_10px_30px_-15px_rgba(251,191,36,0.3)]">
                                 <CardHeader className="pb-4">
-                                    <div className="mb-3 inline-flex rounded-xl border border-cyan-300/20 bg-cyan-400/10 p-2 text-cyan-200">
-                                        <winner.icon className="h-5 w-5" />
+                                    <div className="mb-3 inline-flex rounded-xl border border-slate-700 bg-slate-800 p-3 transition-colors duration-300 group-hover:border-amber-400/50 group-hover:bg-amber-400/10">
+                                        <winner.icon className="h-6 w-6 text-amber-400 group-hover:text-amber-300" />
                                     </div>
-                                    <CardTitle className="text-lg text-white">{winner.name}</CardTitle>
+                                    <CardTitle className="text-xl text-white">{winner.name}</CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <p className="font-medium text-amber-200">{winner.category} ({winner.year})</p>
+                                    <p className="font-medium text-amber-200">{winner.category} <span className="text-slate-500">({winner.year})</span></p>
                                     <p className="mt-1 text-sm text-slate-400">{winner.company}</p>
                                 </CardContent>
                             </Card>

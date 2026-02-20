@@ -138,11 +138,11 @@ export default function ContactPage() {
                   <Label htmlFor="firstName">First Name *</Label>
                   <Input
                     id="firstName"
-                    placeholder="Jane"
+                    placeholder="Aditi"
                     value={formData.firstName}
                     onChange={(event) => updateField('firstName', event.target.value)}
                     aria-invalid={!!errors.firstName}
-                    className="bg-white text-slate-900 placeholder:text-slate-500 dark:bg-slate-950 dark:text-slate-100 dark:placeholder:text-slate-400"
+                    className={`bg-white text-slate-900 placeholder:text-slate-500 dark:bg-slate-950 dark:text-slate-100 dark:placeholder:text-slate-400 ${errors.firstName ? 'border-red-500 focus-visible:ring-red-500' : ''}`}
                   />
                   {errors.firstName && <p className="text-sm text-red-600 dark:text-red-400">{errors.firstName}</p>}
                 </div>
@@ -150,11 +150,11 @@ export default function ContactPage() {
                   <Label htmlFor="lastName">Last Name *</Label>
                   <Input
                     id="lastName"
-                    placeholder="Doe"
+                    placeholder="Sharma"
                     value={formData.lastName}
                     onChange={(event) => updateField('lastName', event.target.value)}
                     aria-invalid={!!errors.lastName}
-                    className="bg-white text-slate-900 placeholder:text-slate-500 dark:bg-slate-950 dark:text-slate-100 dark:placeholder:text-slate-400"
+                    className={`bg-white text-slate-900 placeholder:text-slate-500 dark:bg-slate-950 dark:text-slate-100 dark:placeholder:text-slate-400 ${errors.lastName ? 'border-red-500 focus-visible:ring-red-500' : ''}`}
                   />
                   {errors.lastName && <p className="text-sm text-red-600 dark:text-red-400">{errors.lastName}</p>}
                 </div>
@@ -165,11 +165,11 @@ export default function ContactPage() {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="jane@company.com"
+                  placeholder="aditi@company.com"
                   value={formData.email}
                   onChange={(event) => updateField('email', event.target.value)}
                   aria-invalid={!!errors.email}
-                  className="bg-white text-slate-900 placeholder:text-slate-500 dark:bg-slate-950 dark:text-slate-100 dark:placeholder:text-slate-400"
+                  className={`bg-white text-slate-900 placeholder:text-slate-500 dark:bg-slate-950 dark:text-slate-100 dark:placeholder:text-slate-400 ${errors.email ? 'border-red-500 focus-visible:ring-red-500' : ''}`}
                 />
                 {errors.email && <p className="text-sm text-red-600 dark:text-red-400">{errors.email}</p>}
               </div>
@@ -225,7 +225,7 @@ export default function ContactPage() {
                   value={formData.message}
                   onChange={(event) => updateField('message', event.target.value)}
                   aria-invalid={!!errors.message}
-                  className="min-h-[150px] bg-white text-slate-900 placeholder:text-slate-500 dark:bg-slate-950 dark:text-slate-100 dark:placeholder:text-slate-400"
+                  className={`min-h-[150px] bg-white text-slate-900 placeholder:text-slate-500 dark:bg-slate-950 dark:text-slate-100 dark:placeholder:text-slate-400 ${errors.message ? 'border-red-500 focus-visible:ring-red-500' : ''}`}
                 />
                 {errors.message && <p className="text-sm text-red-600 dark:text-red-400">{errors.message}</p>}
               </div>

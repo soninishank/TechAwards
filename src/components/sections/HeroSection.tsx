@@ -48,14 +48,18 @@ export function HeroSection() {
             transition={{ duration: 0.45, delay: 0.3 }}
             className="mt-9 flex flex-col gap-3 sm:flex-row"
           >
-            <Button asChild size="lg" className="bg-amber-300 text-slate-900 hover:bg-amber-200">
-              <Link href="/awards/contact">
-                Submit Nomination <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-slate-300/50 bg-transparent text-slate-100 hover:bg-slate-900/50">
-              <Link href="/events">See Event Timeline</Link>
-            </Button>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button asChild size="lg" className="bg-amber-300 text-slate-900 hover:bg-amber-200 shadow-[0_0_20px_rgba(251,191,36,0.2)]">
+                <Link href="/awards/contact">
+                  Submit Nomination <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button asChild size="lg" variant="outline" className="border-slate-300/50 bg-transparent text-slate-100 hover:bg-slate-900/50">
+                <Link href="/events">See Event Timeline</Link>
+              </Button>
+            </motion.div>
           </motion.div>
         </div>
 
@@ -91,6 +95,16 @@ export function HeroSection() {
           </div>
         </motion.div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: [0, 8, 0] }}
+        transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center text-slate-500 hover:text-amber-200 transition-colors cursor-default"
+      >
+        <span className="text-xs uppercase tracking-widest font-semibold mb-2">Scroll</span>
+        <ArrowRight className="h-4 w-4 rotate-90" />
+      </motion.div>
     </section>
   );
 }

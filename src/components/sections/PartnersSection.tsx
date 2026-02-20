@@ -3,14 +3,14 @@
 import { motion } from 'framer-motion';
 
 const partners = [
-  'GitHub',
-  'Stripe',
-  'Notion',
-  'Datadog',
-  'Cloudflare',
-  'Figma',
-  'MongoDB',
-  'Vercel',
+  'Flipkart',
+  'Razorpay',
+  'Zoho',
+  'Postman',
+  'CRED',
+  'Swiggy',
+  'Zerodha',
+  'Freshworks',
 ];
 
 export function PartnersSection() {

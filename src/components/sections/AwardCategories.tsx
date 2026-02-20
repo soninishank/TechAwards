@@ -56,17 +56,17 @@ export function AwardCategories() {
 
             return (
               <motion.div
-                key={details.slug}
-                initial={{ opacity: 0, y: 16 }}
+                key={category.slug}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.35, delay: index * 0.05 }}
                 viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={`/awards/${details.slug}`} className="group block h-full">
-                  <Card className="h-full border-white/10 bg-slate-950/70 text-slate-100 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-amber-300/50 group-hover:shadow-[0_20px_50px_rgba(251,191,36,0.1)]">
-                    <CardHeader>
-                      <div className="mb-3 inline-flex w-fit rounded-xl border border-cyan-300/40 bg-cyan-400/10 p-2 text-cyan-200">
-                        <category.icon className="h-5 w-5" />
+                <Link href={`/awards/${category.slug}`} className="group block h-full">
+                  <Card className="h-full border-slate-800 bg-slate-900/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-amber-500/50 hover:bg-slate-800/80 hover:shadow-[0_10px_30px_-15px_rgba(251,191,36,0.3)]">
+                    <CardHeader className="flex flex-row items-center justify-between pb-4">
+                      <div className="rounded-xl border border-slate-700 bg-slate-800 p-3 transition-colors duration-300 group-hover:border-amber-400/50 group-hover:bg-amber-400/10">
+                        <category.icon className="h-6 w-6 text-amber-400 group-hover:text-amber-300" />
                       </div>
                       <CardTitle className="text-xl text-white">{details.title}</CardTitle>
                     </CardHeader>

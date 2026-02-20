@@ -25,28 +25,28 @@ const categories: Category[] = [
     description: 'Early-stage teams with clear customer outcomes and strong product momentum.',
     finalists: [
       {
-        name: 'SignalFoundry',
+        name: 'Veda AI',
         city: 'Bengaluru',
         image:
           'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600&h=450',
         note: 'Built a production-grade AI workflow in under 8 months.',
       },
       {
-        name: 'Northline AI',
+        name: 'Arya Analytics',
         city: 'Mumbai',
         image:
           'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600&h=450',
         note: 'Scaled monthly active users consistently through 2019.',
       },
       {
-        name: 'Patchgrid Labs',
+        name: 'Vyom Labs',
         city: 'Hyderabad',
         image:
           'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600&h=450',
         note: 'Shipped enterprise pilots with repeatable deployment playbook.',
       },
       {
-        name: 'OrbitLedger',
+        name: 'Daksh Systems',
         city: 'Pune',
         image:
           'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=600&h=450',
@@ -59,8 +59,8 @@ const categories: Category[] = [
     description: 'Leaders who combined delivery quality with strong team development.',
     finalists: [
       {
-        name: 'Jordan Lee',
-        company: 'Stack Harbor',
+        name: 'Rahul Iyer',
+        company: 'Kavach Security',
         city: 'Bengaluru',
         image:
           'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600&h=450',
@@ -68,23 +68,23 @@ const categories: Category[] = [
       },
       {
         name: 'Maya Patel',
-        company: 'Railcore',
+        company: 'RailDrishti',
         city: 'Delhi NCR',
         image:
           'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=600&h=450',
         note: 'Raised engineering predictability with clear execution standards.',
       },
       {
-        name: 'Carlos Bennett',
-        company: 'Verity Cloud',
+        name: 'Arjun Nair',
+        company: 'Sattva Cloud',
         city: 'Chennai',
         image:
           'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600&h=450',
         note: 'Built a mentorship ladder that improved internal promotion rates.',
       },
       {
-        name: 'Nina Ross',
-        company: 'Kiteframe',
+        name: 'Pooja Reddy',
+        company: 'Garuda Aerospace',
         city: 'Pune',
         image:
           'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600&h=450',
@@ -97,28 +97,28 @@ const categories: Category[] = [
     description: 'Organizations proving people-first culture can drive stronger execution.',
     finalists: [
       {
-        name: 'HarborStack',
+        name: 'Dharma Systems',
         city: 'Bengaluru',
         image:
           'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600&h=450',
         note: 'Maintained high retention through transparent team rituals.',
       },
       {
-        name: 'Lumenloop',
+        name: 'Chakra Data',
         city: 'Hyderabad',
         image:
           'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=600&h=450',
         note: 'Scaled hiring while preserving onboarding quality and trust.',
       },
       {
-        name: 'Pinebyte',
+        name: 'Tattva Insights',
         city: 'Mumbai',
         image:
           'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600&h=450',
         note: 'Created measurable growth plans for engineers at all levels.',
       },
       {
-        name: 'MetricForge',
+        name: 'Yantra Forge',
         city: 'Chennai',
         image:
           'https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&q=80&w=600&h=450',

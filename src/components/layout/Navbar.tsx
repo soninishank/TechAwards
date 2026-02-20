@@ -4,6 +4,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import { Menu, X, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
   { href: '/events', label: 'Events' },
@@ -16,7 +17,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-slate-950/70 backdrop-blur-2xl transition-all duration-300">
       <div className="mx-auto flex h-18 w-full max-w-[1240px] items-center justify-between px-6 md:px-10">
         <Link href="/" className="flex items-center gap-2 font-display text-lg font-semibold tracking-tight text-white">
           <span className="grid h-9 w-9 place-items-center rounded-full border border-amber-300/50 bg-amber-300/10 text-amber-200">
@@ -55,27 +56,35 @@ export function Navbar() {
         </button>
       </div>
 
-      {isOpen && (
-        <div className="border-t border-white/10 bg-slate-950/95 px-6 py-5 md:hidden">
-          <nav className="flex flex-col gap-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-slate-200"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Button asChild className="mt-2 bg-amber-300 text-slate-900 hover:bg-amber-200">
-              <Link href="/awards/contact" onClick={() => setIsOpen(false)}>
-                Nominate a Company
-              </Link>
-            </Button>
-          </nav>
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            className="overflow-hidden border-t border-white/10 bg-slate-950/95 px-6 md:hidden"
+          >
+            <nav className="flex flex-col gap-3 py-5">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium text-slate-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <Button asChild className="mt-2 bg-amber-300 text-slate-900 hover:bg-amber-200">
+                <Link href="/awards/contact" onClick={() => setIsOpen(false)}>
+                  Nominate a Company
+                </Link>
+              </Button>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
