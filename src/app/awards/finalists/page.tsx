@@ -51,7 +51,7 @@ const categories: Category[] = [
         name: 'Postman',
         city: 'Bengaluru',
         image: '/postman.png',
-        imageClass: 'object-contain bg-white p-6',
+        imageClass: 'object-contain bg-white p-8',
         note: 'Created the definitive API platform used by millions of developers globally.',
       },
     ],
@@ -65,6 +65,7 @@ const categories: Category[] = [
         company: 'Walmart',
         city: 'Bengaluru',
         image: '/vijay.png',
+        imageClass: 'object-cover object-[center_10%]',
         note: 'Drove massive retail tech transformations globally from the India development center.',
       },
       {
@@ -72,6 +73,7 @@ const categories: Category[] = [
         company: 'Amazon',
         city: 'Bengaluru',
         image: '/nipun.png',
+        imageClass: 'object-cover object-[center_10%]',
         linkedin: 'https://www.linkedin.com/in/nipuns/',
         note: 'Head of Engineering - raised engineering predictability and transformed the consumer experience structure.',
       },
@@ -80,6 +82,7 @@ const categories: Category[] = [
         company: 'Flipkart',
         city: 'Bengaluru',
         image: '/ayushi.jpg',
+        imageClass: 'object-cover object-[center_15%]',
         linkedin: 'https://www.linkedin.com/in/ayushi-garg-a65595b2/',
         note: 'Engineering Manager - led critical scaling initiatives and mentored high-performing engineering teams.',
       },
@@ -88,6 +91,7 @@ const categories: Category[] = [
         company: 'InMobi',
         city: 'Bengaluru',
         image: '/pramod.png',
+        imageClass: 'object-cover object-top',
         linkedin: 'https://www.linkedin.com/in/pramod-prakash-a0540423/',
         note: 'Head of Engineering - scaled deep tech platforms and mentored engineering talent globally.',
       },
@@ -101,7 +105,7 @@ const categories: Category[] = [
         name: 'Paytm',
         city: 'Noida',
         image: '/paytm.png',
-        imageClass: 'object-contain bg-white p-6',
+        imageClass: 'object-contain bg-white p-8',
         linkedin: 'https://www.linkedin.com/company/paytm/',
         note: 'Built a massive fintech ecosystem while fostering an intense, execution-focused culture.',
       },
@@ -109,7 +113,7 @@ const categories: Category[] = [
         name: 'Media.net',
         city: 'Mumbai',
         image: '/media_net.png',
-        imageClass: 'object-contain bg-white p-6',
+        imageClass: 'object-contain bg-white p-8',
         linkedin: 'https://www.linkedin.com/company/media.net/',
         note: 'Established inclusive team practices tied to delivery outcomes across global ad-tech teams.',
       },
@@ -117,7 +121,7 @@ const categories: Category[] = [
         name: 'Blinkit',
         city: 'Gurugram',
         image: '/blinkit.png',
-        imageClass: 'object-contain bg-yellow-400 p-6',
+        imageClass: 'object-contain bg-yellow-400 p-8',
         linkedin: 'https://www.linkedin.com/company/letsblinkit/',
         note: 'Optimized hyper-local engineering while maintaining an intense, high-velocity work culture.',
       },
@@ -125,7 +129,7 @@ const categories: Category[] = [
         name: 'Udaan',
         city: 'Bengaluru',
         image: '/udaan.png',
-        imageClass: 'object-contain bg-white p-6',
+        imageClass: 'object-contain bg-white p-8',
         linkedin: 'https://www.linkedin.com/company/udaan/',
         note: 'B2B Buying for Retailers - engineered scalable systems while preserving a tight-knit, founder-led culture.',
       },
@@ -195,16 +199,13 @@ export default function FinalistsPage() {
                   viewport={{ once: true }}
                   className="group overflow-hidden rounded-2xl border border-white/10 bg-slate-900/65"
                 >
-                  <div className="relative h-48 w-full overflow-hidden">
+                  <div className="relative h-56 w-full overflow-hidden border-b border-white/10">
                     <Image
                       src={finalist.image}
                       alt={finalist.name}
                       fill
                       className={`transition-transform duration-500 group-hover:scale-105 ${finalist.imageClass || 'object-cover'}`}
                     />
-                    {category.title !== 'Best Tech Startup' && (
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/10 to-transparent" />
-                    )}
                   </div>
 
                   <div className="space-y-3 p-4">
