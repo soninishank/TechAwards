@@ -36,6 +36,34 @@ const judges = [
     image: '/varsha.png',
     imageClass: 'brightness-110 contrast-[1.05]',
   },
+  {
+    name: 'Saketh Sabbineni',
+    title: 'Senior Program Manager',
+    company: 'Microsoft',
+    linkedin: 'https://www.linkedin.com/in/sakeths/',
+    image: '/saketh.png',
+  },
+  {
+    name: 'Ankit Chaudhary',
+    title: 'Group Product Manager',
+    company: 'Microsoft',
+    linkedin: 'https://www.linkedin.com/in/ankch/',
+    image: '/ankit.jpg',
+  },
+  {
+    name: 'Anshumani Ruddra',
+    title: 'VP of Product',
+    company: 'Hotstar',
+    linkedin: 'https://www.linkedin.com/in/anshumani/',
+    image: '/anshumani.jpg',
+  },
+  {
+    name: 'Siddhartha Roy',
+    title: 'Director of Product',
+    company: 'JioSaavn',
+    linkedin: 'https://www.linkedin.com/in/sidroy-1989/',
+    image: '/siddhartha.png',
+  },
 ];
 
 export default function JudgesPage() {
@@ -62,7 +90,7 @@ export default function JudgesPage() {
         </div>
       </section>
 
-      <section className="mx-auto grid w-full max-w-[1920px] grid-cols-1 gap-x-8 gap-y-12 px-6 py-20 sm:grid-cols-2 md:px-12 lg:grid-cols-4">
+      <section className="mx-auto flex w-full max-w-[1920px] flex-wrap justify-center gap-x-8 gap-y-12 px-6 py-20 md:px-12">
         {judges.map((judge, index) => (
           <motion.div
             key={judge.name}
@@ -102,7 +130,7 @@ export default function JudgesPage() {
           </p>
           <div className="flex justify-center gap-4">
             <Button size="lg" className="bg-purple-600 text-white hover:bg-purple-700" asChild>
-              <Link href="/awards/contact">Apply to Judge</Link>
+              <Link href="mailto:judging@nationaltechexcellence.in?subject=Judge%20Application%202019">Contact for Judging</Link>
             </Button>
           </div>
         </div>
