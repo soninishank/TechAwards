@@ -17,9 +17,32 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: 'National Technology Excellence Award | Awards + Community Events',
+  metadataBase: new URL('https://nationaltechexcellence.in'),
+  title: 'National Technology Excellence Award 2019 Archive',
   description:
-    'A national-level technology awards function with nominations, finalists, judges, and event participation across cities.',
+    'Official archive of the 2019 National Technology Excellence Award with finalists, judges, winners, and event timeline.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'National Technology Excellence Award 2019 Archive',
+    description:
+      'Official archive of the 2019 National Technology Excellence Award with finalists, judges, winners, and event timeline.',
+    url: '/',
+    siteName: 'National Technology Excellence Award',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'National Technology Excellence Award 2019 Archive',
+    description:
+      'Official archive of the 2019 National Technology Excellence Award with finalists, judges, winners, and event timeline.',
+  },
+  icons: {
+    icon: '/globe.svg',
+    shortcut: '/globe.svg',
+    apple: '/globe.svg',
+  },
 };
 
 export default function RootLayout({

@@ -181,7 +181,7 @@ export default function FinalistsPage() {
         </div>
       </section>
 
-      <div className="mx-auto w-full max-w-[1240px] space-y-14 px-6 py-14 md:px-10 md:py-18">
+      <div className="mx-auto w-full max-w-[1240px] space-y-14 px-6 py-14 md:px-10 md:py-20">
         {categories.map((category, catIndex) => (
           <section key={category.title}>
             <div className="mb-6 flex flex-wrap items-end justify-between gap-4 border-b border-white/10 pb-4">

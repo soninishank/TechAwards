@@ -25,8 +25,8 @@ export function Footer() {
 
         <div className="space-y-3 text-sm">
           <h3 className="font-display text-base text-white">Get Involved</h3>
-          <Link href="/awards/nominate" className="inline-flex items-center gap-2 hover:text-amber-200 transition-colors" aria-label="Submit a nomination for the upcoming awards">
-            <Mail className="h-4 w-4" aria-hidden="true" /> Submit a nomination
+          <Link href="/awards/finalists" className="inline-flex items-center gap-2 hover:text-amber-200 transition-colors" aria-label="View finalists from the 2019 awards archive">
+            <Mail className="h-4 w-4" aria-hidden="true" /> View 2019 finalists
           </Link>
           <p className="flex items-center gap-2 text-slate-400">
             <Calendar className="h-4 w-4" /> September 15, 2019, 6:00 PM - 10:00 PM IST

@@ -44,7 +44,7 @@ export default async function AwardCategoryPage({ params }: CategoryPageProps) {
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <Button asChild className="bg-amber-300 text-slate-900 hover:bg-amber-200">
-            <Link href={`/awards/nominate?category=${category.slug}`}>Nominate for this category</Link>
+            <Link href="/awards/finalists">View 2019 Finalists</Link>
           </Button>
           <Button asChild variant="outline">
             <Link href="/awards/how-it-works">Review process</Link>

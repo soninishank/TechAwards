@@ -18,7 +18,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-slate-950/70 backdrop-blur-2xl transition-all duration-300">
-      <div className="mx-auto flex h-18 w-full max-w-[1240px] items-center justify-between px-6 md:px-10">
+      <div className="mx-auto flex h-[72px] w-full max-w-[1240px] items-center justify-between px-6 md:px-10">
         <Link href="/" className="flex items-center gap-2 font-display text-lg font-semibold tracking-tight text-white">
           <span className="grid h-9 w-9 place-items-center rounded-full border border-amber-300/50 bg-amber-300/10 text-amber-200">
             <Trophy className="h-4 w-4" />
@@ -40,7 +40,7 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 md:flex">
           <Button asChild variant="outline" className="border-amber-300/60 bg-transparent text-amber-100 hover:bg-amber-200/10">
-            <Link href="/awards/nominate">Nominate</Link>
+            <Link href="/awards/finalists">Finalists</Link>
           </Button>
           <Button asChild className="bg-amber-300 text-slate-900 hover:bg-amber-200">
             <Link href="/events">Join Event</Link>
@@ -77,8 +77,8 @@ export function Navbar() {
                 </Link>
               ))}
               <Button asChild className="mt-2 bg-amber-300 text-slate-900 hover:bg-amber-200">
-                <Link href="/awards/nominate" onClick={() => setIsOpen(false)}>
-                  Nominate a Company
+                <Link href="/awards/finalists" onClick={() => setIsOpen(false)}>
+                  View 2019 Finalists
                 </Link>
               </Button>
             </nav>

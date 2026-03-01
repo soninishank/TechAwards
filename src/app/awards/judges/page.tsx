@@ -69,7 +69,7 @@ const judges = [
 export default function JudgesPage() {
   return (
     <div className="w-full bg-slate-50 dark:bg-slate-950">
-      <section className="border-b border-slate-100 bg-white px-6 py-20 text-center dark:border-slate-800 dark:bg-slate-900 md:px-12">
+      <section id="judges-hero-section" className="border-b border-slate-100 bg-white px-6 py-20 text-center dark:border-slate-800 dark:bg-slate-900 md:px-12">
         <div className="mx-auto max-w-[1920px]">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -90,7 +90,7 @@ export default function JudgesPage() {
         </div>
       </section>
 
-      <section className="mx-auto flex w-full max-w-[1920px] flex-wrap justify-center gap-x-8 gap-y-12 px-6 py-20 md:px-12">
+      <section id="judges-grid-section" className="mx-auto flex w-full max-w-[1920px] flex-wrap justify-center gap-x-8 gap-y-12 px-6 py-20 md:px-12">
         {judges.map((judge, index) => (
           <motion.div
             key={judge.name}
@@ -99,9 +99,10 @@ export default function JudgesPage() {
             transition={{ duration: 0.5, delay: index * 0.05 }}
             viewport={{ once: true }}
             className="group flex flex-col items-center text-center"
+            id={`judge-card-${judge.name.toLowerCase().replace(/\s+/g, '-')}`}
           >
             <div className="relative mb-6 h-48 w-48 overflow-hidden rounded-full ring-4 ring-slate-100 transition-all duration-300 group-hover:ring-cyan-400 dark:ring-slate-800 dark:group-hover:ring-cyan-500">
-              <Image src={judge.image} alt={judge.name} fill className={`object-cover ${('position' in judge && judge.position) ? judge.position : ''}`} />
+              <Image src={judge.image} alt={`Photo of ${judge.name}`} fill className={`object-cover ${('position' in judge && judge.position) ? judge.position : ''}`} />
             </div>
 
             <h3 className="mb-1 font-display text-xl font-bold text-slate-900 dark:text-white">{judge.name}</h3>
@@ -111,26 +112,28 @@ export default function JudgesPage() {
             </div>
 
             <Link
+              id={`judge-linkedin-${judge.name.toLowerCase().replace(/\s+/g, '-')}`}
               href={('linkedin' in judge && typeof judge.linkedin === 'string') ? judge.linkedin : "https://www.linkedin.com"}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`LinkedIn profile for ${judge.name}`}
               className="mb-3 rounded p-1.5 text-slate-400 transition-colors hover:bg-slate-100 hover:text-[#0077b5] dark:hover:bg-slate-800"
             >
-              <Linkedin className="h-5 w-5" />
+              <Linkedin className="h-5 w-5" aria-hidden="true" />
             </Link>
           </motion.div>
         ))}
       </section>
 
-      <section className="w-full bg-slate-100 py-20 dark:bg-slate-900">
+      <section id="apply-to-judge-section" className="w-full bg-slate-100 py-20 dark:bg-slate-900">
         <div className="mx-auto w-full max-w-[1920px] px-6 text-center md:px-12">
           <h2 className="mb-6 font-display text-3xl font-medium tracking-tight text-slate-900 dark:text-white md:text-4xl">Interested in Judging?</h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
             Share your expertise and help us recognize teams doing outstanding work.
           </p>
           <div className="flex justify-center gap-4">
-            <Button size="lg" className="bg-purple-600 text-white hover:bg-purple-700" asChild>
-              <Link href="mailto:judging@nationaltechexcellence.in?subject=Judge%20Application%202019">Contact for Judging</Link>
+            <Button id="apply-to-judge-button" size="lg" className="bg-purple-600 text-white hover:bg-purple-700" asChild>
+              <Link href="mailto:judging@nationaltechexcellence.in?subject=Judge%20Application%202019" aria-label="Contact us to apply for judging">Contact for Judging</Link>
             </Button>
           </div>
         </div>

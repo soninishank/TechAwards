@@ -50,8 +50,8 @@ export function HeroSection() {
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button asChild size="lg" className="bg-amber-300 text-slate-900 hover:bg-amber-200 shadow-[0_0_20px_rgba(251,191,36,0.2)]">
-                <Link href="/awards/contact">
-                  Submit Nomination <ArrowRight className="ml-2 h-4 w-4" />
+                <Link href="/awards/finalists">
+                  View 2019 Finalists <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </motion.div>
