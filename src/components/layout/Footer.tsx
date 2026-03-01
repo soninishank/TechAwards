@@ -1,13 +1,15 @@
 import Link from 'next/link';
-import { Trophy, Calendar, Mail, MapPin } from 'lucide-react';
-
+import { Calendar, Mail, MapPin } from 'lucide-react';
+import Image from 'next/image';
 export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-slate-950/95 text-slate-300">
       <div className="mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-10 px-6 py-14 md:grid-cols-3 md:px-10">
         <div className="space-y-4">
           <Link href="/" className="flex items-center gap-2 font-display text-lg font-semibold text-white">
-            <Trophy className="h-5 w-5 text-amber-200" />
+            <span className="grid h-6 w-6 overflow-hidden md:h-7 md:w-7 place-items-center rounded-full border border-amber-300/50 bg-amber-300/10">
+              <Image src="/logo.png" alt="National Technology Excellence Award Logo" width={28} height={28} className="h-full w-full object-cover" />
+            </span>
             National Technology Excellence Award
           </Link>
           <p className="max-w-sm text-sm leading-relaxed text-slate-400">

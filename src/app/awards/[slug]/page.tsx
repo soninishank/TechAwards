@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/button';
@@ -6,6 +7,30 @@ import { getAwardCategoryBySlug } from '@/data/awardCategories';
 type CategoryPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const category = getAwardCategoryBySlug(slug);
+
+  if (!category) {
+    return {
+      title: 'Category Not Found | National Technology Excellence Award 2019',
+    };
+  }
+
+  return {
+    title: `${category.title} | National Technology Excellence Award 2019`,
+    description: category.description.substring(0, 160),
+    openGraph: {
+      title: `${category.title} | National Technology Excellence Award 2019`,
+      description: category.description.substring(0, 160),
+      url: `/awards/${slug}`,
+    },
+    alternates: {
+      canonical: `/awards/${slug}`,
+    },
+  };
+}
 
 export default async function AwardCategoryPage({ params }: CategoryPageProps) {
   const { slug } = await params;

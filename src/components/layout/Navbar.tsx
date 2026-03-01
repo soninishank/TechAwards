@@ -2,8 +2,9 @@
 
 import * as React from 'react';
 import Link from 'next/link';
-import { Menu, X, Trophy } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
@@ -20,8 +21,8 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-slate-950/70 backdrop-blur-2xl transition-all duration-300">
       <div className="mx-auto flex h-[72px] w-full max-w-[1240px] items-center justify-between px-6 md:px-10">
         <Link href="/" className="flex items-center gap-2 font-display text-lg font-semibold tracking-tight text-white">
-          <span className="grid h-9 w-9 place-items-center rounded-full border border-amber-300/50 bg-amber-300/10 text-amber-200">
-            <Trophy className="h-4 w-4" />
+          <span className="grid h-9 w-9 overflow-hidden place-items-center rounded-full border border-amber-300/50 bg-amber-300/10">
+            <Image src="/logo.png" alt="National Technology Excellence Award Logo" width={36} height={36} className="h-full w-full object-cover" />
           </span>
           National Technology Excellence Award
         </Link>

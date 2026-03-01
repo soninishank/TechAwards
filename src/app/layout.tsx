@@ -3,6 +3,7 @@ import { Inter, Archivo } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -31,17 +32,19 @@ export const metadata: Metadata = {
     url: '/',
     siteName: 'National Technology Excellence Award',
     type: 'website',
+    images: [{ url: '/logo.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'National Technology Excellence Award 2019 Archive',
     description:
       'Official archive of the 2019 National Technology Excellence Award with finalists, judges, winners, and event timeline.',
+    images: ['/logo.png'],
   },
   icons: {
-    icon: '/globe.svg',
-    shortcut: '/globe.svg',
-    apple: '/globe.svg',
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
   },
 };
 
@@ -58,6 +61,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );

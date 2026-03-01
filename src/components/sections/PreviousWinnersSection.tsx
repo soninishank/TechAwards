@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const winners = [
     {
-        name: 'Gaurang Munjhe',
+        name: 'Gaurang Munje',
         category: 'Rising Star',
         company: 'Tech Innovators Inc.',
         year: '2019',
