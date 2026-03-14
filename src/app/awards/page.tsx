@@ -1,4 +1,10 @@
 import { AwardCategories } from '@/components/sections/AwardCategories';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Award Categories | National Technology Excellence Award',
+  description: 'Explore all categories of the National Technology Excellence Award recognizing startups, innovators, and leaders.',
+};
 
 export default function AwardsPage() {
     return (

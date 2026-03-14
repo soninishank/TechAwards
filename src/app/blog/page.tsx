@@ -3,6 +3,12 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog & Updates | National Technology Excellence Award',
+  description: 'Catch up on the latest news, announcements, and deep dives from the National Tech Excellence Award community.',
+};
 
 const posts = [
   {

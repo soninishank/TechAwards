@@ -1,6 +1,12 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Briefcase, ArrowRight } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Careers | National Technology Excellence Award',
+  description: 'Join our mission to celebrate technology builders and shape the future of tech communities.',
+};
 
 export default function CareersPage() {
   return (

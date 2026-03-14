@@ -22,6 +22,15 @@ export const metadata: Metadata = {
   title: 'National Technology Excellence Award 2019 Archive',
   description:
     'Official archive of the 2019 National Technology Excellence Award with finalists, judges, winners, and event timeline.',
+  keywords: ['National Technology Excellence Award', 'India', '2019', 'Technology Innovations', 'Startups', 'Tech Awards', 'NTEA', 'Awards', 'Tech', 'Excellence'],
+  authors: [{ name: 'National Technology Excellence Award' }],
+  creator: 'National Technology Excellence Award',
+  publisher: 'National Technology Excellence Award',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   alternates: {
     canonical: '/',
   },
@@ -31,6 +40,7 @@ export const metadata: Metadata = {
       'Official archive of the 2019 National Technology Excellence Award with finalists, judges, winners, and event timeline.',
     url: '/',
     siteName: 'National Technology Excellence Award',
+    locale: 'en_IN',
     type: 'website',
     images: [{ url: '/logo.png', width: 1200, height: 630 }],
   },

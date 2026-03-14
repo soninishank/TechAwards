@@ -1,5 +1,11 @@
 import { Code2, Heart, Users, Globe } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'About | National Technology Excellence Award',
+    description: 'Learn about the story, community, and core values behind the National Technology Excellence Award.',
+};
 
 export default function AboutPage() {
     return (

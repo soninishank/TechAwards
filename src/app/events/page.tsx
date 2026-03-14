@@ -1,5 +1,11 @@
 import { events } from '@/data/events';
 import { EventCard } from '@/components/events/EventCard';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Events & Showcases | National Technology Excellence Award',
+  description: 'Discover our upcoming events, award ceremonies, hackathons, and community gatherings.',
+};
 
 export default function EventsPage() {
   const upcomingEvents = events.filter((event) => event.status === 'upcoming');
