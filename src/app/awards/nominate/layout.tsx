@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Nominate | National Technology Excellence Award 2019',
-    description: 'Nominate your company, team, or product for the 2019 National Technology Excellence Awards. Review categories and submission guidelines.',
+    title: 'Nominate a Builder | National Technology Excellence Award',
+    description: 'Submit a nomination for an outstanding tech leader, startup, or product.',
     openGraph: {
-        title: 'Nominate | National Technology Excellence Award 2019',
-        description: 'Nominate your company, team, or product for the 2019 National Technology Excellence Awards. Review categories and submission guidelines.',
+        title: 'Nominate a Builder | National Technology Excellence Award',
+        description: 'Submit a nomination for an outstanding tech leader, startup, or product.',
         url: '/awards/nominate',
     },
     alternates: {

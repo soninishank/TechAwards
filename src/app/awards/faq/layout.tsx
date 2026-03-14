@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'FAQ | National Technology Excellence Award 2019',
-    description: 'Frequently Asked Questions about the National Technology Excellence Award 2019. Find answers about nominations, judging, and the award ceremony.',
+    title: 'Frequently Asked Questions | National Technology Excellence Award',
+    description: 'Find answers to common questions about judging, nominations, and the award process.',
     openGraph: {
-        title: 'FAQ | National Technology Excellence Award 2019',
-        description: 'Frequently Asked Questions about the National Technology Excellence Award 2019. Find answers about nominations, judging, and the award ceremony.',
+        title: 'Frequently Asked Questions | National Technology Excellence Award',
+        description: 'Find answers to common questions about judging, nominations, and the award process.',
         url: '/awards/faq',
     },
     alternates: {

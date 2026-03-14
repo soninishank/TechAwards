@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Winners | National Technology Excellence Award 2019',
-    description: 'Explore the outstanding winners of the 2019 National Technology Excellence Awards across all technology, startup, and enterprise categories.',
+    title: '2019 Winners | National Technology Excellence Award',
+    description: 'Discover the winners across all categories of the 2019 National Technology Excellence Award.',
     openGraph: {
-        title: 'Winners | National Technology Excellence Award 2019',
-        description: 'Explore the outstanding winners of the 2019 National Technology Excellence Awards across all technology, startup, and enterprise categories.',
+        title: '2019 Winners | National Technology Excellence Award',
+        description: 'Discover the winners across all categories of the 2019 National Technology Excellence Award.',
         url: '/awards/winners',
     },
     alternates: {

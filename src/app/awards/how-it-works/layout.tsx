@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'How It Works | National Technology Excellence Award 2019',
-    description: 'Learn about the nomination, selection, and voting process for the National Technology Excellence Awards, showcasing our rigorous un-biased review mechanism.',
+    title: 'How It Works | National Technology Excellence Award',
+    description: 'Understand the complete timeline, application, and selection process for the awards.',
     openGraph: {
-        title: 'How It Works | National Technology Excellence Award 2019',
-        description: 'Learn about the nomination, selection, and voting process for the National Technology Excellence Awards, showcasing our rigorous un-biased review mechanism.',
+        title: 'How It Works | National Technology Excellence Award',
+        description: 'Understand the complete timeline, application, and selection process for the awards.',
         url: '/awards/how-it-works',
     },
     alternates: {

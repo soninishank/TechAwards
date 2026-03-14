@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Contact | National Technology Excellence Award 2019',
-    description: 'Contact the organizers of the National Technology Excellence Award for any inquiries about the 2019 event, judging process, or sponsorships.',
+    title: 'Contact Support | National Technology Excellence Award',
+    description: 'Get in touch with us for sponsorships, media inquiries, or support.',
     openGraph: {
-        title: 'Contact | National Technology Excellence Award 2019',
-        description: 'Contact the organizers of the National Technology Excellence Award for any inquiries about the 2019 event, judging process, or sponsorships.',
+        title: 'Contact Support | National Technology Excellence Award',
+        description: 'Get in touch with us for sponsorships, media inquiries, or support.',
         url: '/awards/contact',
     },
     alternates: {
